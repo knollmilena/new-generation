@@ -1,0 +1,428 @@
+@media (max-width: 1024px) {
+    .container {
+        max-width: 925px;
+    }
+    .navbar__item:not(:last-child) {
+        margin-right: 2.93vw;
+    }
+    .navbar__menu {
+        margin-right: 6.05vw;
+    }
+    .navbar__link {
+        font-size: 14px;
+    }
+    .header__bottom {
+        background-image: linear-gradient(90deg, rgba(1, 0, 16, 0.46) 20.83%, rgba(2, 0, 26, 0.00) 100%),
+        url(../img/2064-sportivnye_obekty-zheltyj-igrok-stadion-ukraina-1920x1080\ 1.jpg);
+        background-repeat: no-repeat;
+        background-origin: border-box;
+    }
+    .header__title {
+        font-size: 50px;
+    }
+    .header__descr {
+        font-size: 20px;
+    }
+    .about__descr strong {
+        font-size: 18px;
+        line-height: 32px; /* 177.778% */
+    }
+    .about__descr {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .about__us-container {
+        padding: 96px 79px 90px 79px;
+    }
+    .about__main-info {
+        margin-right: 21px;
+    }
+    .team__title {
+        margin-bottom: 32px;
+    }
+    .member__name {
+        color: #000;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 36px;
+        letter-spacing: -0.24px;
+    }
+    .member__block {
+        width: 220px;
+    }
+
+    .team {
+        padding-bottom: 90px;
+    }
+    .fees {
+        padding: 70px 66px 69px 76px;
+    }
+    .calendar {
+        padding-bottom: 90px;
+    }
+    .news__title {
+        margin-bottom: 59px;
+    }
+    .news__link {
+        font-size: 18px;
+        line-height: 27px; /* 150% */
+        letter-spacing: -0.27px;
+    }
+    .news__descr {
+        color: rgba(0, 0, 0, 0.80);
+        font-size: 16px;
+        line-height: 27px; /* 168.75% */
+        letter-spacing: -0.24px;
+    }
+    .news__block-add {
+        margin-bottom: 42px;
+    }
+    .news {
+        padding-bottom: 90px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 670px;
+    }
+    .container__header {
+        position: relative;
+        width: 100%;
+        height: 69px;
+    }
+    .navbar {
+        width: 100%;
+        height: 69px;
+    }
+    .nav__container {
+        height: 30px;
+    }
+    .header__title {
+        color: #1F1F1F;
+    }
+    .header__descr {
+        color: #1F1F1F;
+        font-size: 18px;
+        margin-bottom: 55px;
+    }
+    .about__us-container {
+        padding: 47px 30px 61px 30px;
+    }
+    .about__block-right {
+        padding-top: 98px;
+    }
+    .about {
+        padding-bottom: 40px;
+    }
+    .team__member {
+        width: 670px;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    .member__photo-first {
+        width: 215px;
+    }
+    .fees {
+        padding: 70px 38px 73px 46px;
+    }
+    .calendar__left-block {
+        width: 100%;
+        border-right: none;
+        padding-left: 118px;
+    }
+    .title__bottom {
+        font-size: 24px;
+        margin-bottom: 28px;
+    }
+    .calendar__left-block strong {
+        font-size: 18px;
+        line-height: 30px; /* 166.667% */
+        letter-spacing: -0.27px;
+    }
+    .calendar__fees {
+        margin-bottom: 60px;
+    }
+    .calendar {
+        padding-bottom: 40px;
+    }
+    .news__title {
+        margin-bottom: 24px;
+    }
+    .news__block-add {
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    .news {
+        padding-bottom: 60px;
+    }
+    .photo__block {
+        width: 295px;
+    }
+    .header__bottom {
+        background-image: none;
+    }
+    .header__bottom .content {
+        width: 100%;
+        max-width: 586px;
+        margin-left: 0px;
+    }
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 23px;
+        z-index: 3;
+    }
+    .header__burger span {
+        position: absolute;
+        background-color: #fff;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 11px;
+    }
+    .header__burger::before,
+    .header__burger::after {
+        content: "";
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+    }
+    .header__burger::before {
+        top: 0;
+    }
+    .header__burger::after {
+        bottom: 0;
+    }
+    .header__burger.active::before {
+        transform: rotate(45deg);
+        /* top: 9px; */
+    }
+    .header__burger.active::after {
+        transform: rotate(-45deg);
+        bottom: 21px;
+    }
+    .header__burger.active span {
+        transform: scale(0);
+    }
+    .navbar__menu {
+        display: flex;
+        flex-direction: column;
+        width: 264px;
+        height: 400px;
+        margin-right: 0;
+        /* background-color: #000; */
+    }
+    .navbar__wrap {
+        position: absolute;
+        flex-direction: column;
+        max-width: 420px;
+        max-height: 600px;
+        padding: 16.93vw 11.20vw 23.05vw 9.11vw;
+        /* display: none; */
+        top: 0;
+        right: 0;
+        z-index: 1;
+        border-radius: 0px 0px 24px 24px;
+        background: linear-gradient(219deg, #0F1A50 0%, #074D92 100%);
+        box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.10);
+    }
+    .navbar__link {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    .navbar__item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 5.21vw;
+    }
+    .navbar__item:nth-child(6) {
+        margin-bottom: 8.46vw;
+    }
+    .personal__acc {
+        text-align: inherit;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    /* .container__header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+    } */
+    .calendar__right-block {
+        display: none;
+    }
+    /* FOOTER */
+    .footer_right-block {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        max-width: 290px;
+        margin: 0 15px;
+    }
+    .container__header {
+        width: 100%;
+        position: relative;
+        height: 69px;
+        margin-bottom: 9.15vw;
+    }
+    .navbar__wrap {
+        position: absolute;
+        flex-direction: column;
+        width: 200px;
+        height: 500px;
+        top: 0;
+        right: 0;
+    }
+    .header__title {
+        font-size: 20px;
+        font-weight: 800;
+        margin-bottom: 12px;
+    }
+    .header__descr {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 21px;
+    }
+    .header__btn{
+        padding: 20px 65px 23px 47px;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .header__btn:not(:last-of-type) {
+        margin-right: 0;
+    }
+    .header__bottom {
+        min-height: 200px;
+        padding-bottom: 71px;
+    }
+    .about {
+        padding-bottom: 50px;
+    }
+    .about__title {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: normal;
+        padding-bottom: 24px;
+    }
+    .about__descr strong {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 25px; /* 178.571% */
+    }
+    .about__descr {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+    .about__block {
+        flex-direction: column-reverse;
+    }
+    .about__us-container {
+        padding: 46px 27px;
+    }
+    .right__block-photo {
+        width: 236px;
+    }
+    .about__block-right {
+        display: block;
+        padding: 0;
+    }
+    .about__main-info {
+        width: 100%;
+        margin-right: 0;
+    }
+    .team {
+        padding-bottom: 50px;
+    }
+    .team__member {
+        display: flex;
+        flex-direction: column;
+    }
+    .team__title {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .member__photo-first {
+        width: 290px;
+    }
+    .member__block{
+        width: 290px;
+    }
+    .member__name {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 36px; /* 200% */
+        letter-spacing: -0.27px;
+    }
+    .member__descr {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+        letter-spacing: -0.21px;
+    }
+
+    /* ГРАФИК СБОРОВ */
+
+    .fees__title {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .fees {
+        align-items: center;
+        padding: 30px 29px;
+    }
+    .calendar__fees {
+        margin-bottom: 0;
+    }
+    .calendar__left-block {
+        width: 170px;
+        padding: 0;
+    }
+    .calendar__left-block strong {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 30px; /* 187.5% */
+        letter-spacing: -0.24px;
+    }
+    .calendar__left-block p {
+        display: inline-block;
+        color: rgba(255, 255, 255, 0.80);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px; /* 150% */
+        letter-spacing: -0.21px;
+        word-wrap: break-word;
+    }
+    .title__bottom {
+        color: #FFF;
+        font-family: Montserrat;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+
+}

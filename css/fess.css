@@ -30,6 +30,10 @@ html {
       margin: 0;
   }
 
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+
   /* GLOBAL */
 
   :root {
@@ -145,11 +149,10 @@ html {
     /* flex-flow: row nowrap; */
 }
 
-/* tournaments section */
+/* FEEEEEEESSSS */
 
-.title__tournaments {
-    margin: 0;
-    margin-bottom: 42px;
+.container h2 {
+    margin-bottom: 33px;
     color: #1F1F1F;
     font-family: Montserrat;
     font-size: 48px;
@@ -158,79 +161,56 @@ html {
     line-height: normal;
 }
 
-.internal__block {
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 54px;
-    width: 830px;
-    gap: 20px;
-    padding-right: 55px;
-    border-right: 1px solid rgba(82, 82, 82, 0.45);
+.content__tabs {
+    width: 1087px;
 }
 
-.click__pages {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding-left: 318px;
-    padding-right: 363px;
+.tabs__block {
+   display: none;
 }
 
-.item__pages {
+
+
+
+.main__content {
     display: flex;
 }
 
-.item__pages:not(:last-of-type) {
-    margin-right: 15px;
+.left__block-01 {
+    padding-right: 59px;
+    padding-bottom: 118px;
+    width: 832px;
+    border-right: 1px solid #333;
 }
 
-
-.list__pages {
-    display: flex;
-}
-
-.link__pages {
-    color: #525252;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.24px;
-}
-
-.arow__left {
-    margin-right: 15px;
-}
-
-.arow__right {
-    margin-left: 15px;
-}
-
-.tournaments__wrap {
-    display: flex;
-
-}
-
-.news__info {
-    padding: 32px 25px 39px 30px;
-}
-
-.news__link {
-    margin-bottom: 7px;
-    color: #000;
+.descr__01 {
+    margin-bottom: 60px;
+    color: rgba(31, 31, 31, 0.80);
     font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
-    font-weight: 600;
-    line-height: 33px; /* 137.5% */
+    font-weight: 400;
+    line-height: 30px; /* 125% */
     letter-spacing: -0.36px;
 }
 
-.news__descr {
-    color: rgba(0, 0, 0, 0.80);
+.title__01 {
+    margin-bottom: 20px;
+    color: #1F1F1F;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
 
-    /* Body P */
+.gps__01 {
+    margin-bottom: 20px;
+}
+
+.descr__gps {
+    margin-bottom: 60px;
+    color: rgba(31, 31, 31, 0.80);
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
@@ -239,45 +219,38 @@ html {
     letter-spacing: -0.27px;
 }
 
-/* .tournaments__left-block {
+.descr__gps span {
+    color: rgba(31, 31, 31, 0.80);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -0.27px;
+}
+
+.block__tab_01 {
     display: flex;
-    flex-wrap: wrap;
-    width: 830px;
-    gap: 17px;
-    padding-right: 55px;
-    border-right: 1px solid rgba(82, 82, 82, 0.45);
-} */
-
-
-.container__application {
-    width: 774px;
-    margin-bottom: 22px;
-    padding: 46px 113px 54px 94px;
+    padding: 48px 54px 55px 39px;
     border-radius: 10px;
     background: linear-gradient(118deg, #0F1A50 0%, #074D92 100%);
 }
 
-.news__block {
-    display: flex;
-    flex-direction: column;
-    width: 377px;
-    border-radius: 10px;
-    background: #FFF;
-}
-
-
-
-.title__tournaments-application {
-    color: #F4F4F4;
+.descr__tab_01 {
+    color: #FFF;
     text-align: center;
     font-family: Montserrat;
-    font-size: 32px;
+    font-size: 29px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
 }
 
-.tournaments__btn {
+.block__tab_01 div {
+    margin-right: 38px;
+}
+
+.btn__tab_01 {
     padding: 18px 65px 22px 54px;
     border-radius: 3px;
     background: #FF7A00;
@@ -289,27 +262,26 @@ html {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    white-space: nowrap;
+    cursor: pointer;
 }
 
-.application__block {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.block__right-content {
+    padding-left: 45px;
 }
 
-.container__flex {
-    display: flex;
-    flex-direction: column;
-}
-
-.tournaments__right-block {
+.block__right-info {
     display: flex;
     flex-direction: column;
-    padding-left: 59px;
 }
 
-.tournaments__right-block h4 {
-    margin: 0;
+.archive__wrap {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.archive__wrap h4 {
     margin-bottom: 32px;
     color: #1F1F1F;
     font-family: Montserrat;
@@ -319,8 +291,47 @@ html {
     line-height: normal;
 }
 
-.archive__wrap {
-    margin-bottom: 60px;
+.right__link {
+    color: #525252;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.tabs__block:target {
+    display: block;
+}
+
+.tabs__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 82px;
+}
+
+.tabs__link {
+    padding: 10px;
+    color: #1F1F1F;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: color 0.3s ease, background-color 0.3s, border-radius 0.2s ease;
+    border: transparent;
+}
+
+.tabs__link:focus-visible {
+    color: var(--white-color);
+    background-color: var(--orange-color);
+    border: 1px solid var(--orange-color);
+}
+
+.tabs__link:hover {
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    border-radius: 15px;
 }
 
 .right__link {
@@ -337,7 +348,7 @@ html {
     margin-bottom: 20px;
 }
 
-/* FOOTER TOURNAMENTS */
+/* footer  */
 
 .full__footer-container {
     width: 100%;
@@ -408,3 +419,5 @@ html {
     font-weight: 400;
     line-height: 27px;
 }
+
+
