@@ -1,0 +1,124 @@
+@media (max-width: 1043px) {
+  .container {
+    max-width: 924px;
+  }
+  .section__all {
+    padding-bottom: 100px;
+  }
+  .nav__container {
+    font-size: 14px;
+  }
+  .navbar__link {
+    font-weight: 400;
+  }
+  .personal__acc {
+    font-weight: 400;
+  }
+  .navbar__item:not(:last-child) {
+    margin-right: 23px;
+  }
+  .navbar__wrap {
+    max-width: 637px;
+  }
+  /* .navbar__menu {
+    margin-right: 60px;
+  } */
+  .hero__wrap {
+    flex-wrap: wrap;
+  }
+  .hero__basic-data {
+    margin-bottom: 60px;
+  }
+  .hero__teams {
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    border-left: 0;
+  }
+  .team-profile__wrap {
+    width: 100%;
+    gap: 70px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .footer_right-block strong,
+  .contacts__title-footer {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .footer_right-block p {
+    font-weight: 300;
+  }
+  .hero__teams-title {
+    margin: 0 0 30px 0;
+  }
+}
+@media (max-width: 780px) {
+  .container {
+    max-width: 668px;
+  }
+  .hero__basic-data {
+    align-items: center;
+  }
+  .section__all {
+    padding-top: 70px;
+  }
+  .hero__title {
+    font-size: 32px;
+  }
+  .user-info-left,
+  .user-info-right {
+    font-size: 18px;
+  }
+}
+@media (max-width: 540px) {
+  .section__all {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+  .hero__basic-data {
+    align-items: flex-start;
+    flex-shrink: unset;
+    margin-bottom: 50px;
+  }
+  .hero__title {
+    font-size: 24px;
+    margin-bottom: 35px;
+  }
+
+  .hero__user-img {
+    max-width: 150px;
+    margin-bottom: 30px;
+  }
+  .hero__teams {
+    align-items: flex-start;
+  }
+  .hero__teams-title {
+    margin: 0px 0 15px 0;
+  }
+  .user-info-left {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .user-info-left,
+  .user-info-right {
+    font-size: 16px;
+  }
+  .user-info-right {
+    margin-left: 10px;
+  }
+  .hero__teams-title {
+    font-size: 24px;
+  }
+  .team__user-img {
+    max-width: 35px;
+    height: 35px;
+  }
+  .team__name {
+    font-size: 16px;
+    margin-left: 12px;
+  }
+  .team-profile__wrap {
+    gap: 30px;
+  }
+}

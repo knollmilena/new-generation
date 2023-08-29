@@ -1,0 +1,192 @@
+:root {
+  --white-color: #fff;
+  --blue-color: #1b407f;
+  --orange-color: #ff7a00;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* HERO */
+.section__all {
+  padding-top: 80px;
+}
+.hero__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.hero__title {
+  margin: 0;
+  color: #1f1f1f;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+
+.hero__user-img {
+  width: 230px;
+  margin-bottom: 46px;
+}
+.hero__basic-data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  margin-bottom: 32px;
+}
+.hero-information__wrap {
+  display: flex;
+  flex-direction: column;
+  padding-right: 75px;
+}
+.user-info-left {
+  color: rgba(31, 31, 31, 0.8);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.user-info-right {
+  margin-left: 21px;
+  color: #525252;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.user-info-left:not(:last-of-type) {
+  margin-bottom: 13px;
+}
+.user-info-right:not(:last-of-type) {
+  margin-bottom: 13px;
+}
+
+.hero-information__right {
+  color: #525252;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* HERO TEAMS */
+.hero__teams {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  padding-left: 55px;
+  border-left: 0.5px solid rgba(82, 82, 82, 0.45);
+}
+.team__user-img {
+  max-width: 45px;
+  height: 45px;
+  border-radius: 5px;
+}
+.team-profile {
+  display: flex;
+  align-items: center;
+}
+.team__name {
+  margin-left: 25px;
+  color: #525252;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.hero__teams-title {
+  margin: 0 0 25px 0;
+  color: #1f1f1f;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/*FOOTER*/
+.full__footer-container {
+  width: 100%;
+  background: #1b407f;
+  box-shadow: 0px -4px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 51px;
+  padding-bottom: 71px;
+}
+
+.footer__left-block {
+  width: 274px;
+}
+
+.footer__center-block {
+  width: 205px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_right-block {
+  width: 251px;
+}
+
+.footer__list {
+  display: flex;
+  margin-bottom: 11px;
+}
+
+.footer_item {
+  margin-right: 16px;
+}
+
+.contacts__title-footer {
+  margin-bottom: 5px;
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 18px;
+  line-height: normal;
+}
+
+.link__mail {
+  color: #d4d4d4;
+  font-family: Open Sans;
+  font-size: 14px;
+  line-height: normal;
+}
+
+.footer_right-block strong {
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px; /* 168.75% */
+}
+
+.footer_right-block p {
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 924px;
+  }
+}

@@ -1,0 +1,618 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  min-width: 400px;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  background: #f8f8f8;
+}
+
+p {
+  margin: 0;
+}
+
+/* GLOBAL */
+
+:root {
+  --white-color: #fff;
+  --blue-color: #1b407f;
+  --orange-color: #ff7a00;
+}
+
+.list__reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.btn__reset {
+  padding: 0;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.heading__site {
+  margin: 0;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.site-btn {
+  cursor: pointer;
+  border-radius: 3px;
+  border: 1px solid #ff7a00;
+}
+
+.descr__site {
+  margin: 0;
+  color: var(--white-color);
+}
+
+.section__all {
+  padding-bottom: 112px;
+}
+
+/*  HEADER */
+
+.container__header {
+  min-width: 400px;
+  /* position: fixed; */
+  background-color: var(--blue-color);
+}
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  position: right;
+}
+
+.navbar .nav__container {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__menu {
+  /* gap: 50px; */
+  margin-right: 7.34vw;
+}
+
+.navbar__item {
+  display: inline-block;
+  /* margin-right: 50px; */
+}
+
+.navbar__item:not(:last-child) {
+  margin-right: 47px;
+}
+
+.navbar__link {
+  display: inline-block;
+  color: var(--white-color);
+  text-align: center;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.personal__acc {
+  color: var(--white-color);
+  text-align: center;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.navbar__wrap {
+  display: flex;
+  justify-content: space-between;
+  /* flex-flow: row nowrap; */
+}
+
+.header__bottom {
+  min-height: 575px;
+  background-image: linear-gradient(90deg, rgba(1, 0, 16, 0.46) 20.83%, rgba(2, 0, 26, 0) 100%),
+    url(../img/2064-sportivnye_obekty-zheltyj-igrok-stadion-ukraina-1920x1080\ 1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* background-size: cover; */
+  padding-top: 120px;
+  padding-left: 98px;
+  padding-right: 235px;
+  padding-bottom: 135px;
+  align-content: end;
+}
+
+.header__title {
+  margin-bottom: 5px;
+  color: var(--white-color);
+  font-family: Montserrat;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.header__descr {
+  margin: 0;
+  margin-bottom: 119px;
+  color: var(--white-color);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header__btn {
+  max-width: 315px;
+  background: #ff7a00;
+  box-shadow: 3px 4px 15px 0px rgba(0, 0, 0, 0.25);
+  padding: 17px 54px;
+  margin-right: 49px;
+  color: var(--white-color);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.main__content {
+  padding-bottom: 0;
+}
+
+/* ABOUT__US */
+
+.about__title {
+  margin-bottom: 7px;
+  color: var(--white-color);
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.about__descr {
+  color: var(--white-color);
+  font-family: Open Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+}
+
+.about__us-container {
+  /* display: flex; */
+  padding: 118px 98px 112px 98px;
+  border-radius: 0px 0px 10px 10px;
+  background: linear-gradient(118deg, #0f1a50 0%, #074d92 100%);
+}
+
+.about__main-info {
+  width: 520px;
+}
+
+.about__block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__block-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right__block-photo {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* TEAM SECTION */
+
+.team {
+  padding-bottom: 112px;
+}
+
+.team__title {
+  color: #1f1f1f;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 44px;
+}
+
+.team__member {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 21px;
+}
+
+.member__block {
+  width: 279px;
+  /* margin-right: 20px; */
+}
+
+.member__name {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.3px;
+}
+
+.member__descr {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+  letter-spacing: -0.18px;
+}
+
+.member__photo-first {
+  margin-bottom: 10px;
+}
+
+/* CALENDAR */
+
+.fees__title {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 39px;
+}
+
+.fees {
+  padding: 96px 63px 100px 99px;
+  border-radius: 10px;
+  background: linear-gradient(132deg, #074d92 0%, #0f1a50 100%);
+}
+
+.month {
+  color: #f4f4f4;
+}
+
+.days {
+  color: #f1f1f1;
+}
+
+.calendar__fees {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.calendar__right-block {
+  display: inline-grid;
+  justify-content: center;
+  align-items: center;
+  width: 490px;
+  background: none;
+  padding-left: 85px;
+  padding-right: 63px;
+}
+
+.calendar__left-block {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  border-right: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.calendar__left-block strong {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 125% */
+  letter-spacing: -0.36px;
+}
+
+.calendar__left-block p {
+  width: 317px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+  letter-spacing: -0.27px;
+}
+
+.month {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 490px;
+  margin-bottom: 37px;
+}
+
+.name__month {
+  margin-right: 70px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.days {
+  /* display: grid;
+    justify-content: center;
+    align-items: center; */
+  display: flex;
+  justify-content: space-around;
+  grid-template-columns: repeat(7, 1fr);
+  height: 50px;
+}
+
+.weekday {
+  display: flex;
+  flex-direction: column;
+  height: 83px;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  color: #a6a2a2;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.block__days {
+  width: 40px;
+}
+
+.test__div-block {
+  width: 490px;
+}
+
+.dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 45px;
+}
+
+.calendar__number {
+  color: #fff;
+  text-align: center;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.calendar__number:nth-child(11) {
+  background-color: red;
+}
+
+.title__bottom {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 21px;
+  color: #fff;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.fees__btn-bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.fees__btn {
+  cursor: pointer;
+  background: #ff7a00;
+  box-shadow: 3px 4px 15px 0px rgba(0, 0, 0, 0.25);
+  padding: 20px 60px;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/*  NEWS */
+
+.news__title {
+  margin-bottom: 42px;
+}
+
+.news__block-add {
+  display: flex;
+  margin-bottom: 53px;
+  gap: 20px;
+}
+
+.news__block {
+  position: relative;
+  width: 377px;
+  /* margin-right: 20px; */
+  border-radius: 10px;
+  background: #fff;
+}
+
+.news__block:last-child {
+  margin-right: 0;
+}
+
+.news__info {
+  padding: 34px 25px 39px 30px;
+}
+
+.news__name {
+  margin-bottom: 5px;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px; /* 150% */
+  letter-spacing: -0.36px;
+}
+
+.news__descr {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: Montserrat;
+  font-size: 18px;
+  line-height: 30px; /* 166.667% */
+  letter-spacing: -0.27px;
+}
+
+.news__button-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.news__btn {
+  padding: 18px 65px 22px 61px;
+  border-radius: 3px;
+  border: 2px solid var(--orange-color);
+  background: #fff;
+  box-shadow: 3px 4px 10px 0px rgba(47, 47, 47, 0.09);
+  color: var(--orange-color);
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.news__link::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* FOOTER */
+
+.full__footer-container {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  background: #1b407f;
+  box-shadow: 0px -4px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 51px;
+  padding-bottom: 71px;
+}
+
+.footer__left-block {
+  width: 274px;
+}
+
+.footer__center-block {
+  width: 205px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_right-block {
+  width: 251px;
+}
+
+.footer__list {
+  display: flex;
+  margin-bottom: 11px;
+}
+
+.footer_item {
+  margin-right: 16px;
+}
+
+.contacts__title-footer {
+  margin-bottom: 5px;
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 18px;
+  line-height: normal;
+}
+
+.link__mail {
+  color: #d4d4d4;
+  font-family: Open Sans;
+  font-size: 14px;
+  line-height: normal;
+}
+
+.footer_right-block strong {
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px; /* 168.75% */
+}
+
+.footer_right-block p {
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}

@@ -1,0 +1,116 @@
+@media (max-width: 1095px) {
+  .cell-fullname {
+    width: 30%;
+  }
+  .cell-role {
+    width: 168px;
+  }
+  .table__img {
+    width: 110px;
+  }
+  .cell-number {
+    width: 30px;
+  }
+}
+@media (max-width: 958px) {
+  .container {
+    max-width: 668px;
+  }
+  .section__all {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .table {
+    font-size: 20px;
+  }
+  .cell-fullname {
+    width: 28%;
+  }
+  .cell-role {
+    width: 160px;
+  }
+  .hero__title {
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+  .hero__wrap {
+    flex-direction: column;
+  }
+  .hero__user-img {
+    width: 250px;
+    margin-bottom: 25px;
+  }
+  .user-info-left {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .user-info-right {
+    font-size: 20px;
+  }
+  .hero__basic-data {
+    margin-bottom: 60px;
+  }
+  .team__name,
+  .team-profile__button {
+    font-size: 20px;
+  }
+  .hero__teams {
+    padding: 0;
+    border: none;
+    overflow: unset;
+  }
+  .team-profile__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .team-profile:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .table-button__wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .player-choice {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .cell-number {
+    padding: 0;
+  }
+  .cell-fullname,
+  .cell-role,
+  .cell-date,
+  .cell-circle {
+    padding: 20px 10px;
+  }
+  .cell-circle {
+    width: 50px;
+  }
+  .cell-fullname {
+    width: 29%;
+    white-space: pre-line;
+    overflow: hidden;
+  }
+}
+@media (max-width: 958px) {
+  .table {
+    font-size: 18px;
+  }
+  .table-wrap {
+    margin-bottom: 90px;
+  }
+  .cell-circle svg {
+    width: 25px;
+    height: 25px;
+  }
+  .player-choice,
+  .creation-choice {
+    font-size: 16px;
+  }
+  .player-choice {
+    margin-bottom: 20px;
+  }
+}
