@@ -84,10 +84,10 @@ p {
 }
 
 .container__header {
-  width: 100%;
-  min-width: 400px;
-  /* position: fixed; */
-  background-color: var(--blue-color);
+    width: 100%;
+    min-width: 320px;
+    /* position: fixed; */
+    background-color: var(--blue-color);
 }
 
 .navbar {
@@ -483,6 +483,7 @@ p {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  
 }
 
 /*  NEWS */
