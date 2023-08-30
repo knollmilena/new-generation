@@ -1,242 +1,175 @@
 html {
-    box-sizing: border-box;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
-  
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  img {
-    max-width: 100%;
-  }
-  
-  body {
-      min-width: 400px;
-      font-family: 'Montserrat', sans-serif;
-      font-family: 'Open Sans', sans-serif;
-      font-family: 'Roboto', sans-serif;
-      background: #F8F8F8;
-     
-  }
-  
-  p {
-      margin: 0;
-  }
+  box-sizing: border-box;
+}
 
-  /* GLOBAL */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
-  :root {
-    --white-color: #fff;
-    --blue-color: #1B407F;
-    --orange-color: #FF7A00;
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  min-width: 400px;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  background: #f8f8f8;
+}
+
+p {
+  margin: 0;
+}
+
+/* GLOBAL */
+
+:root {
+  --white-color: #fff;
+  --blue-color: #1b407f;
+  --orange-color: #ff7a00;
 }
 
 .list__reset {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .btn__reset {
-    padding: 0;
+  padding: 0;
 }
 
 .container {
-    max-width: 1170px;
-    padding: 0 15px;
-    margin: 0 auto;
-    width: 100%;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .heading__site {
-    margin: 0;
-    font-family: Montserrat;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  margin: 0;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .site-btn {
-    cursor: pointer;
-    border-radius: 3px;
-    border: 1px solid #FF7A00;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 1px solid #ff7a00;
 }
 
-
 .descr__site {
-    margin: 0;
-    color: var(--white-color);
+  margin: 0;
+  color: var(--white-color);
 }
 
 .section__all {
-    padding-bottom: 112px;
+  padding-bottom: 112px;
 }
 
 /* HEADER */
 
-.header {
-    padding-bottom: 112px;
-}
-
-.container__header {
-    min-width: 400px;
-    /* position: fixed; */
-    background-color: var(--blue-color);
-}
-
-.navbar {
-    width: 100%;
-    height: 100px;
-    position: right;
-}
-
-.navbar .nav__container {
-    height: inherit;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.navbar__menu {
-    /* gap: 50px; */
-    margin-right: 141px;
-}
-
-.navbar__item {
-    display: inline-block;
-    /* margin-right: 50px; */
-}
-
-.navbar__item:not(:last-child) {
-    margin-right: 47px;
-}
-
-.navbar__link {
-    display: inline-block;
-    color: var(--white-color);
-    text-align: center;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.personal__acc {
-    color: var(--white-color);
-    text-align: center;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-
-.navbar__wrap {
-    display: flex;
-    justify-content: space-between;
-    /* flex-flow: row nowrap; */
-}
-
 /* tournaments section */
 
 .title__tournaments {
-    margin: 0;
-    margin-bottom: 42px;
-    color: #1F1F1F;
-    font-family: Montserrat;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  margin: 0;
+  margin-bottom: 42px;
+  color: #1f1f1f;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .internal__block {
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 54px;
-    width: 830px;
-    gap: 20px;
-    padding-right: 55px;
-    border-right: 1px solid rgba(82, 82, 82, 0.45);
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 54px;
+  width: 830px;
+  gap: 20px;
+  padding-right: 55px;
+  border-right: 1px solid rgba(82, 82, 82, 0.45);
 }
 
 .click__pages {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding-left: 318px;
-    padding-right: 363px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-left: 318px;
+  padding-right: 363px;
 }
 
 .item__pages {
-    display: flex;
+  display: flex;
 }
 
 .item__pages:not(:last-of-type) {
-    margin-right: 15px;
+  margin-right: 15px;
 }
 
-
 .list__pages {
-    display: flex;
+  display: flex;
 }
 
 .link__pages {
-    color: #525252;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.24px;
+  color: #525252;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.24px;
 }
 
 .arow__left {
-    margin-right: 15px;
+  margin-right: 15px;
 }
 
 .arow__right {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
 .tournaments__wrap {
-    display: flex;
-
+  display: flex;
 }
 
 .news__info {
-    padding: 32px 25px 39px 30px;
+  padding: 32px 25px 39px 30px;
 }
 
 .news__link {
-    margin-bottom: 7px;
-    color: #000;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 33px; /* 137.5% */
-    letter-spacing: -0.36px;
+  margin-bottom: 7px;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33px; /* 137.5% */
+  letter-spacing: -0.36px;
 }
 
 .news__descr {
-    color: rgba(0, 0, 0, 0.80);
+  color: rgba(0, 0, 0, 0.8);
 
-    /* Body P */
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px; /* 166.667% */
-    letter-spacing: -0.27px;
+  /* Body P */
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+  letter-spacing: -0.27px;
 }
 
 /* .tournaments__left-block {
@@ -248,163 +181,88 @@ html {
     border-right: 1px solid rgba(82, 82, 82, 0.45);
 } */
 
-
 .container__application {
-    width: 774px;
-    margin-bottom: 22px;
-    padding: 46px 113px 54px 94px;
-    border-radius: 10px;
-    background: linear-gradient(118deg, #0F1A50 0%, #074D92 100%);
+  width: 774px;
+  margin-bottom: 22px;
+  padding: 46px 113px 54px 94px;
+  border-radius: 10px;
+  background: linear-gradient(118deg, #0f1a50 0%, #074d92 100%);
 }
 
 .news__block {
-    display: flex;
-    flex-direction: column;
-    width: 377px;
-    border-radius: 10px;
-    background: #FFF;
+  display: flex;
+  flex-direction: column;
+  width: 377px;
+  border-radius: 10px;
+  background: #fff;
 }
 
-
-
 .title__tournaments-application {
-    color: #F4F4F4;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+  color: #f4f4f4;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .tournaments__btn {
-    padding: 18px 65px 22px 54px;
-    border-radius: 3px;
-    background: #FF7A00;
-    box-shadow: 3px 4px 15px 0px rgba(0, 0, 0, 0.25);
-    color: #FFF;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+  padding: 18px 65px 22px 54px;
+  border-radius: 3px;
+  background: #ff7a00;
+  box-shadow: 3px 4px 15px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .application__block {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .container__flex {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .tournaments__right-block {
-    display: flex;
-    flex-direction: column;
-    padding-left: 59px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 59px;
 }
 
 .tournaments__right-block h4 {
-    margin: 0;
-    margin-bottom: 32px;
-    color: #1F1F1F;
-    font-family: Montserrat;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  margin: 0;
+  margin-bottom: 32px;
+  color: #1f1f1f;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .archive__wrap {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .right__link {
-    display: inline-block;
-    color: #525252;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  display: inline-block;
+  color: #525252;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .right__link:not(:last-of-type) {
-    margin-bottom: 20px;
-}
-
-/* FOOTER TOURNAMENTS */
-
-.full__footer-container {
-    width: 100%;
-    border-radius: 10px 10px 0px 0px;
-    background: #1B407F;
-    box-shadow: 0px -4px 10px 0px rgba(0, 0, 0, 0.20);
-}
-
-.footer__container {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 51px;
-    padding-bottom: 71px;
-}
-
-.footer__left-block {
-    width: 274px;
-}
-
-.footer__center-block {
-    width: 205px;
-    display: flex;
-    flex-direction: column;
-}
-
-.footer_right-block {
-    width: 251px;
-}
-
-.footer__list {
-    display: flex;
-    margin-bottom: 11px;
-}
-
-.footer_item {
-    margin-right: 16px;
-}
-
-.contacts__title-footer {
-    margin-bottom: 5px;
-    color: #FFF;
-    font-family: Open Sans;
-    font-size: 18px;
-    line-height: normal;
-}
-
-.link__mail {
-    color: #D4D4D4;
-    font-family: Open Sans;
-    font-size: 14px;
-    line-height: normal;
-}
-
-.footer_right-block strong {
-    color: #FFF;
-    font-family: Open Sans;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 27px; /* 168.75% */
-}
-
-.footer_right-block p {
-    color: #FFF;
-    font-family: Open Sans;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 27px;
+  margin-bottom: 20px;
 }
