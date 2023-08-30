@@ -271,7 +271,7 @@
         display: none;
     }
 }
-@media (max-width: 767px) {
+@media (max-width: 540px) {
     .container {
         max-width: 290px;
         margin: 0 15px;
