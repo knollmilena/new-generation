@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap"
       rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script defer src="script/script.js"></script>
   </head>
   <body>
     <header class="header">
@@ -33,7 +34,78 @@
                   <li class="navbar__item"><a href="" class="navbar__link">НОВОСТИ</a></li>
                   <li class="navbar__item"><a href="" class="navbar__link">КОНТАКТЫ</a></li>
                 </ul>
-                <a href="" class="personal__acc">ВОЙТИ</a>
+                <button class="personal__acc">ВОЙТИ</button>
+                <div class="modal-wrap">
+                  <!--для активации входа modal-wrap--entry-->
+                  <form class="form-entry" action="#">
+                    <h1 class="form-title">Вход</h1>
+                    <div class="form-wrap">
+                      <label class="input-title" for="email">Почта:</label>
+                      <input class="input" type="text" placeholder="milka@mail.ru" name="email" required />
+                      <label class="input-title" for="psw">Пароль:</label>
+                      <input class="input" type="password" placeholder="Пароль" name="psw" required />
+                      <button type="submit" class="registerbtn">Войти</button>
+                      <a class="entrybtn">У меня нет аккаунта</a>
+                      <a class="form-cross">
+                        <svg
+                          class="cross"
+                          width="23"
+                          height="25"
+                          viewBox="0 0 23 25"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <rect
+                            width="30.3897"
+                            height="3.03897"
+                            transform="matrix(0.688031 0.725681 -0.688031 0.725681 2.0918 0)"
+                            fill="black" />
+                          <rect
+                            width="30.3897"
+                            height="3.03897"
+                            transform="matrix(0.688031 -0.725681 0.688031 0.725681 0 22.0547)"
+                            fill="black" />
+                        </svg>
+                      </a>
+                    </div>
+                  </form>
+                  <form class="form-register" action="#">
+                    <h1 class="form-title">Регистрация</h1>
+                    <div class="form-wrap">
+                      <label class="input-title" for="fullname">ФИО:</label>
+                      <input class="input" type="text" placeholder="Иванов Иван Иванович" name="fullname" required />
+                      <label class="input-title" for="number">Номер телефона:</label>
+                      <input class="input" type="number" placeholder="89993609999" name="number" required />
+                      <label class="input-title" for="email">Почта:</label>
+                      <input class="input" type="text" placeholder="milka@mail.ru" name="email" required />
+                      <label class="input-title" for="country">Город:</label>
+                      <input class="input" type="text" placeholder="Москва" name="country" required />
+                      <label class="input-title" for="psw">Пароль:</label>
+                      <input class="input" type="password" placeholder="Пароль" name="psw" required />
+                      <button type="submit" class="registerbtn">Зарегистрироваться</button>
+                      <a type="submit" class="accountbtn">Уже есть аккаунт</a>
+                      <a class="form-cross">
+                        <svg
+                          class="cross"
+                          width="23"
+                          height="25"
+                          viewBox="0 0 23 25"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <rect
+                            width="30.3897"
+                            height="3.03897"
+                            transform="matrix(0.688031 0.725681 -0.688031 0.725681 2.0918 0)"
+                            fill="black" />
+                          <rect
+                            width="30.3897"
+                            height="3.03897"
+                            transform="matrix(0.688031 -0.725681 0.688031 0.725681 0 22.0547)"
+                            fill="black" />
+                        </svg>
+                      </a>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </nav>
@@ -64,7 +136,7 @@
               <div class="about__main-info">
                 <h2 class="about__title heading__site">О&nbsp;нас</h2>
                 <p class="about__descr descr__site">
-                  <strong>Новое поколение</strong>- спортивная организация детско-юношеских турниров и
+                  <strong>Новое поколение</strong> - спортивная организация детско-юношеских турниров и
                   учебно-тренировочных сборов, спортивная организация детско-юношеских турниров и учебно-тренировочных
                   сборов,спортивная организация детско-юношеских турниров и учебно-тренировочных сборов
                 </p>
@@ -134,18 +206,18 @@
             <h2 class="fees__title heading__site">График сборов</h2>
             <div class="calendar__fees">
               <div class="calendar__left-block">
-                <a href="">
-                  <strong> 11 - 14 сентября </strong>
-                  <p>Сбор В московской области детей от 2014 до 2016 года рождения</p>
-                </a>
-                <a href="">
-                  <strong> 11 - 14 сентября </strong>
-                  <p>Сбор В московской области детей от 2014 до 2016 года рождения</p>
-                </a>
-                <a href="">
-                  <strong> 11 - 14 сентября </strong>
-                  <p>Сбор В московской области детей от 2014 до 2016 года рождения</p>
-                </a>
+                <p>
+                  <a href=""><strong> 11 - 14 сентября </strong></a> <br />
+                  Сбор В московской области детей от 2014 до 2016 года рождения
+                </p>
+                <p>
+                  <a href=""><strong> 11 - 14 сентября </strong></a> <br />
+                  Сбор В московской области детей от 2014 до 2016 года рождения
+                </p>
+                <p>
+                  <a href=""><strong> 11 - 14 сентября </strong></a> <br />
+                  Сбор В московской области детей от 2014 до 2016 года рождения
+                </p>
               </div>
               <div class="calendar__right-block">
                 <div class="month">
@@ -281,6 +353,14 @@
           </div>
         </div>
       </section>
+      <button class="btn-up btn__reset">
+        <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="15.5" cy="15.5" r="15" fill="white" stroke="#074D92" />
+          <path
+            d="M9.79938 19.1243L9 18.1791L16 10L23 18.1791L22.1099 19.1243L16 12.014L9.79938 19.1243Z"
+            fill="#074D92" />
+        </svg>
+      </button>
     </main>
 
     <footer>
