@@ -36,7 +36,77 @@
                   <li class="navbar__item"><a href="" class="navbar__link">НОВОСТИ</a></li>
                   <li class="navbar__item"><a href="" class="navbar__link">КОНТАКТЫ</a></li>
                 </ul>
-                <a href="" class="personal__acc">ВОЙТИ</a>
+                <button class="personal__acc">ВОЙТИ</button>
+                <div class="modal-wrap">
+                  <!--для активации входа modal-wrap--entry-->
+                  <form class="form-entry" action="#">
+                    <h1 class="form-title">Вход</h1>
+                    <div class="form-wrap">
+                      <label class="input-title" for="email">Почта:</label>
+                      <input class="input" type="text" placeholder="milka@mail.ru" name="email" required />
+                      <label class="input-title" for="psw">Пароль:</label>
+                      <input class="input" type="password" placeholder="Пароль" name="psw" required />
+                      <button type="submit" class="registerbtn">Войти</button>
+                      <a class="entrybtn">У меня нет аккаунта</a>
+                      <a class="form-cross">
+                        <svg
+                          class="cross"
+                          width="23"
+                          height="25"
+                          viewBox="0 0 23 25"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <rect
+                            width="30.3897"
+                            height="3.03897"
+                            transform="matrix(0.688031 0.725681 -0.688031 0.725681 2.0918 0)"
+                            fill="black" />
+                          <rect
+                            width="30.3897"
+                            height="3.03897"
+                            transform="matrix(0.688031 -0.725681 0.688031 0.725681 0 22.0547)"
+                            fill="black" />
+                        </svg>
+                      </a>
+                    </div>
+                  </form>
+                  <form class="form-register" action="#">
+                    <h1 class="form-title">Регистрация</h1>
+                    <div class="form-wrap">
+                      <label class="input-title" for="fullname">ФИО:</label>
+                      <input class="input" type="text" placeholder="Иванов Иван Иванович" name="fullname" required />
+                      <label class="input-title" for="number">Номер телефона:</label>
+                      <input class="input" type="text" placeholder="89993609999" name="number" required />
+                      <label class="input-title" for="email">Почта:</label>
+                      <input class="input" type="text" placeholder="milka@mail.ru" name="email" required />
+                      <label class="input-title" for="country">Город:</label>
+                      <input class="input" type="text" placeholder="Москва" name="country" required />
+                      <label class="input-title" for="psw">Пароль:</label>
+                      <input class="input" type="password" placeholder="Пароль" name="psw" required />
+                      <button type="submit" class="registerbtn">Зарегистрироваться</button>
+                      <a type="submit" class="accountbtn">Уже есть аккаунт</a>
+                      <a class="form-cross">
+                        <svg
+                          class="cross"
+                          height="25"
+                          viewBox="0 0 23 25"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <rect
+                            width="30.3897"
+                            height="3.03897"
+                            transform="matrix(0.688031 0.725681 -0.688031 0.725681 2.0918 0)"
+                            fill="black" />
+                          <rect
+                            width="30.3897"
+                            height="3.03897"
+                            transform="matrix(0.688031 -0.725681 0.688031 0.725681 0 22.0547)"
+                            fill="black" />
+                        </svg>
+                      </a>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </nav>

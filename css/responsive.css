@@ -22,6 +22,62 @@
   .nav__arow svg {
     width: 5.6vw;
   }
+  .modal-wrap--register .form-register {
+    right: calc(50% - 176.5px);
+    width: 353px;
+    height: 506px;
+    padding-top: 38px;
+    font-size: 12px;
+  }
+  .input {
+    height: 34px;
+    padding-left: 10px;
+    margin-bottom: 8px;
+  }
+  .input:nth-child(n + 9) {
+    margin-bottom: 18px;
+  }
+  .form-title {
+    margin: 0 0 15px;
+    font-size: 20px;
+  }
+  .cross {
+    width: 15px;
+  }
+  .form-cross {
+    top: -67px;
+    right: -58px;
+  }
+  .registerbtn {
+    padding: 8px 35px;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  .accountbtn {
+    font-size: 14px;
+  }
+  .modal-wrap--entry .form-entry {
+    top: 90px;
+    right: calc(50% - 174.5px);
+    height: 315px;
+    padding-top: 37px;
+    font-size: 12px;
+  }
+  .entrybtn {
+    font-size: 14px;
+  }
+  .input {
+    width: 247px;
+  }
+  .form-cross {
+    top: -68px;
+    right: -47px;
+  }
+}
+@media (max-width: 1270px) {
+  .modal-wrap--register .form-register {
+    top: 30px;
+  }
 }
 
 @media (max-width: 1024px) {
