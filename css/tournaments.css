@@ -207,10 +207,10 @@ p {
   line-height: normal;
 }
 
-.tournaments__btn {
+.application__block button {
   padding: 18px 65px 22px 54px;
   border-radius: 3px;
-  background: #ff7a00;
+  background-color: #ff7a00;
   box-shadow: 3px 4px 15px 0px rgba(0, 0, 0, 0.25);
   color: #fff;
   text-align: center;
