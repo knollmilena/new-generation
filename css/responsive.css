@@ -74,6 +74,29 @@
     right: -47px;
   }
 }
+@media (max-width: 1098px) {
+  .main__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .tabs__link {
+    font-size: 28px;
+  }
+  .left__block-01 {
+    max-width: 992px;
+    border: none;
+    padding: 0;
+  }
+  .gallery__wrap {
+    display: none;
+  }
+  .right__link:not(:last-of-type) {
+    margin-right: 23px;
+  }
+  .block__tab_01 {
+    padding: 48px 85px 55px 39px;
+  }
+}
 @media (max-width: 1270px) {
   .modal-wrap--register .form-register {
     top: 30px;
@@ -83,6 +106,9 @@
 @media (max-width: 1024px) {
   .container {
     max-width: 90.33svw;
+  }
+  .reset__header {
+    padding-bottom: 0;
   }
   .navbar__item:not(:last-child) {
     margin-right: 2.93vw;
@@ -195,10 +221,78 @@
     font-size: 24px;
   }
   /* TУРНИРЫ МЕДИА */
+
+  /* Отдельные страницы под каждый турнир */
+  .content__block {
+    padding: 0 42px 0 0;
+  }
+  .right__link {
+    font-size: 18px;
+  }
+  .command__block h4 {
+    font-size: 30px;
+  }
   
+  /* СБОРЫ МЕДИА */
+
+  .main__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 992px;
+  }
+  .left__block-01 {
+    padding: 0;
+    border: none;
+    max-width: 992px;
+    margin-bottom: 50px;
+  }
+  .tabs__link {
+    font-size: 24px;
+  }
+  .descr__01 {
+    font-size: 20px;
+    line-height: 30px; /* 150% */
+    letter-spacing: -0.3px;
+    margin-bottom: 5.86vw;
+  }
+  .tabs__item {
+    margin-bottom: 6.45vw;
+  }
+  .descr__gps {
+    margin-bottom: 50px;
+  }
+  .block__tab_01 {
+    padding: 48px 54px 55px 39px;
+  }
+  .gallery__wrap {
+    display: none;
+  }
+  .archive__wrap {
+    flex-direction: unset;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .archive__wrap h4 {
+    font-size: 28px;
+  }
+  .right__link:not(:last-of-type) {
+    margin-right: 23px;
+  }
   
 }
-
+@media (max-width: 855px) {
+  .tabs__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: unset;
+  }
+  .tabs__link:nth-child(1) {
+    margin-right: 6.17vw;
+  }
+  .block__tab_01 div {
+    margin-right: 10px;
+  }
+}
 @media (max-width: 768px) {
   .container {
     max-width: 87.24svw;
@@ -343,8 +437,8 @@
     visibility: visible;
     position: absolute;
     flex-direction: column;
-    width: 115dvw;
-    height: 100dvh;
+    width: 105dvw; /* понизил ширину появлялся скрол */
+    height: 160dvh; /* Повысил высоту со 100 , меню небыло видно */
     padding: 16.93svw 11.2svw 23.05svw 25.11svw;
     top: 0;
     right: 0;
@@ -411,6 +505,41 @@
     width: 55px;
     height: 55px;
   }
+  /* Отдельные страницы под каждый турнир */
+  .internal__block p {
+    font-size: 24px;
+    margin-bottom: 7.81vw;
+  }
+  .tournaments__right-container {
+    display: none;
+  }
+  .internal__block {
+    border: none;
+  }
+  .title__tournaments {
+    font-size: 40px;
+    margin-bottom: 4.95vw;
+  }
+   /* <СБОРЫ ТАБЫ */
+   .descr__tab_01 {
+    font-size: 23px;
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+  .block__right-content {
+    padding-left: 0;
+  }
+  .block__tab_01 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5.21vw 16.22vw;
+  }
+}
+@media (max-width: 623px) {
+  .header__btn {
+    padding: 15px 20px;
+  }
 }
 @media (max-width: 540px) {
   .container {
@@ -453,13 +582,13 @@
     margin-bottom: 21px;
   }
   .header__btn {
-    padding: 20px 65px 23px 47px;
+    padding: 20px 45px 23px 47px;
     font-size: 12px;
     font-weight: 600;
     line-height: normal;
   }
   .header__btn:not(:last-of-type) {
-    margin-right: 0;
+    margin-right: 15px;
   }
   .header__bottom {
     min-height: 200px;
@@ -601,5 +730,80 @@
   .photo__block {
     max-width: 290px;
   }
+  /* Отдельный странички ТУринров */
+
+  .title__tournaments {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  .internal__block p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px; /* 150% */
+    letter-spacing: -0.27px;
+  }
+  .command__block h4 {
+    font-size: 18px;
+  }
+  .command__item {
+    font-size: 16px;
+  }
+  .command__item:not(:last-of-type) {
+    margin-bottom: 13px;
+  }
+  .command__item:last-child {
+    margin-bottom: 12.50vw;
+  }
+  .block__maps {
+    margin-bottom: 50px;
+  }
   /* FOOOOOTER */
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__left-block {
+    width: 184px;
+  }
+  .footer__center-block {
+    width: 184px;
+  }
+  /* СБОРЫ ТАБЫ */
+  .descr__tab_01 {
+    margin-right: 0;
+    font-size: 18px;
+  }
+  .descr__01 {
+    font-size: 16px;
+    line-height: 30px; /* 187.5% */
+    letter-spacing: -0.24px;
+  }
+  .title__01 {
+    font-size: 18px;
+  }
+  .block__tab_01 {
+    padding: 42px 32px 45px 30px;
+  }
+  .archive__wrap h4 {
+    font-size: 24px;
+  }
+  .archive__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .archive__flex {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 489px) {
+  .header__btn {
+    padding: 10px 20px;
+  }
+  .header__btn:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+
 }
