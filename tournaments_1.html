@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/tournaments_1.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,7 +17,7 @@
     <script defer src="script/script.js"></script>
   </head>
   <body>
-    <header class="header reset__header">
+    <header class="header">
       <div class="container__header">
         <div class="container">
           <nav class="navbar">
@@ -41,7 +42,7 @@
                     <h1 class="form-title">Вход</h1>
                     <div class="form-wrap">
                       <label class="input-title" for="email">Почта:</label>
-                      <input id="mail" class="input" type="text" placeholder="milka@mail.ru" name="email" required />
+                      <input class="input" type="text" placeholder="milka@mail.ru" name="email" required />
                       <label class="input-title" for="psw">Пароль:</label>
                       <input class="input" type="password" placeholder="Пароль" name="psw" required />
                       <button type="submit" class="registerbtn">Войти</button>
@@ -98,7 +99,8 @@
                           <rect
                             width="30.3897"
                             height="3.03897"
-                            transform="matrix(0.688031 -0.725681 0.688031 0.725681 0 22.0547)" />
+                            transform="matrix(0.688031 -0.725681 0.688031 0.725681 0 22.0547)"
+                            fill="black" />
                         </svg>
                       </a>
                     </div>
@@ -110,244 +112,51 @@
         </div>
       </div>
     </header>
-
     <main>
-      <section class="main__content section__all">
-        <div class="container">
-          <div class="header__bottom">
-            <div class="content">
-              <h1 class="header__title heading__site">Новое поколение</h1>
-              <p class="header__descr">
-                Спортивная организация детско-юношеских<br />
-                турниров и&nbsp;учебно-тренировочных сборов
-              </p>
-              <button class="header__btn site-btn btn__reset">Регистрация на турнир</button>
-              <button class="header__btn site-btn btn__reset">Турниры</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="about section__all">
-        <div class="container">
-          <div class="about__us-container">
-            <div class="about__block">
-              <div class="about__main-info">
-                <h2 class="about__title heading__site">О&nbsp;нас</h2>
-                <p class="about__descr descr__site">
-                  <strong>Новое поколение</strong> - спортивная организация детско-юношеских турниров и
-                  учебно-тренировочных сборов, спортивная организация детско-юношеских турниров и учебно-тренировочных
-                  сборов,спортивная организация детско-юношеских турниров и учебно-тренировочных сборов
-                </p>
-              </div>
-              <div class="about__block-right">
-                <img class="right__block-photo" src="img/about_img.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="team section__all">
-        <div class="container">
-          <h2 class="team__title heading__site">Наша команда</h2>
-          <div class="team__member">
-            <div class="member__block">
-              <div class="member__photo-first">
-                <img src="./img/first__contacts.png" alt="#" />
-              </div>
-              <div class="member__info">
-                <strong class="member__name"> Иванов Иван Иванович </strong>
-                <p class="member__descr">
-                  Руководитель командных сборов в Москве и Московской области. Опыт работы 10500 лет.Невероятный человек
-                  и учитель в одном лице. Лучший из лучших, худший из худших
-                </p>
-              </div>
-            </div>
-            <div class="member__block">
-              <div class="member__photo-first">
-                <img src="./img/second__contacts.png" alt="#" />
-              </div>
-              <div class="member__info">
-                <strong class="member__name"> Кадони Влад Михаилович </strong>
-                <p class="member__descr">
-                  Тренер с магическими способностями. Потренирует, на Таро погадает, судьбу предскажет!
-                </p>
-              </div>
-            </div>
-            <div class="member__block">
-              <div class="member__photo-first">
-                <img src="./img/third__contacts.png" alt="#" />
-              </div>
-              <div class="member__info">
-                <strong class="member__name"> Герасимов Пётр </strong>
-                <p class="member__descr">
-                  Алкоголик со стажем, но тренирует качественно!Как говорится: “опыт работы не пропьешь..”
-                </p>
-              </div>
-            </div>
-            <div class="member__block">
-              <div class="member__photo-first">
-                <img src="./img/fourth_contacts.png" alt="#" />
-              </div>
-              <div class="member__info">
-                <strong class="member__name"> Чернов Рекс Большович </strong>
-                <p class="member__descr">Тренер гачимучи</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="calendar section__all">
-        <div class="container">
-          <div class="fees">
-            <h2 class="fees__title heading__site">График сборов</h2>
-            <div class="calendar__fees">
-              <div class="calendar__left-block">
-                <p>
-                  <a href=""><strong> 11 - 14 сентября </strong></a> <br />
-                  Сбор В московской области детей от 2014 до 2016 года рождения
-                </p>
-                <p>
-                  <a href=""><strong> 11 - 14 сентября </strong></a> <br />
-                  Сбор В московской области детей от 2014 до 2016 года рождения
-                </p>
-                <p>
-                  <a href=""><strong> 11 - 14 сентября </strong></a> <br />
-                  Сбор В московской области детей от 2014 до 2016 года рождения
-                </p>
-              </div>
-              <div class="calendar__right-block">
-                <div class="month">
-                  <div class="name__month">Сентябрь</div>
-                  <a href="#" class="nav__arow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="75" height="38" viewBox="0 0 75 38" fill="none">
-                      <rect x="1" y="1" width="73" height="35.5" stroke="#D9D9D9" stroke-width="2" />
-                      <rect x="36.8535" width="1.2931" height="36.8535" fill="#D9D9D9" />
-                      <path
-                        d="M15.9765 11.2628L15.3854 10.3398L10.2705 18.4217L15.3854 26.5036L15.9765 25.4759L11.53 18.4217L15.9765 11.2628Z"
-                        fill="#D9D9D9" />
-                      <path d="M11.6384 17.7786H27.1557V19.0717H11.6384V17.7786Z" fill="#D9D9D9" />
-                      <path
-                        d="M57.7389 11.2624L58.2924 10.3395L63.0811 18.4214L58.2924 26.5033L57.7389 25.4756L61.9019 18.4214L57.7389 11.2624Z"
-                        fill="#D9D9D9" />
-                      <path d="M47.199 17.7783H62.7162V19.0714H47.199V17.7783Z" fill="#D9D9D9" />
-                    </svg>
-                  </a>
+      <section class="tournaments">
+        <div class="container container__flex">
+          <h2 class="title__tournaments">Турнир Лето 2023 в Москве</h2>
+          <div class="tournaments__wrap">
+            <div class="internal__block">
+                <div class="content__block">
+                    <p>
+                        Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст..
+                    </p>
+                    <div class="command__block">
+                        <h4>Команда: дети 2015 - 2017 года\ формат 8+1</h4>
+                            <ol class="command__list">
+                                <li class="command__item">Команда1</li>
+                                <li class="command__item">Команда1</li>
+                                <li class="command__item">Команда1</li>
+                                <li class="command__item">Команда1</li>
+                                <li class="command__item">Команда1</li>
+                                <li class="command__item">Команда456456456456</li>
+                                <li class="command__item">Команда43345</li>
+                                <li class="command__item">Команда1231231</li>
+                            </ol>
+                        <div class="block__maps">
+                            <h4>Место проведения</h4>
+                            <div></div>
+                            <p>Турниры пройдет в Москве по адресу:<br> <strong>ул. Манежная площадь д. 1</strong></p>
+                        </div>    
+                    </div>
                 </div>
-                <div class="test__div-block">
-                  <div class="days">
-                    <div class="block__days"><span class="weekday">ПН</span></div>
-                    <div class="block__days"><span class="weekday">ВТ</span></div>
-                    <div class="block__days"><span class="weekday">СР</span></div>
-                    <div class="block__days"><span class="weekday">ЧТ</span></div>
-                    <div class="block__days"><span class="weekday">ПТ</span></div>
-                    <div class="block__days"><span class="weekday">СБ</span></div>
-                    <div class="block__days"><span class="weekday">ВС</span></div>
-                  </div>
-                  <div class="dates">
-                    <time></time>
-                    <time></time>
-                    <time></time>
-                    <time></time>
-                    <time class="calendar__number">1</time>
-                    <time class="calendar__number">2</time>
-                    <time class="calendar__number">3</time>
-                    <time class="calendar__number">4</time>
-                    <time class="calendar__number">5</time>
-                    <time class="calendar__number">6</time>
-                    <time class="calendar__number">7</time>
-                    <time class="calendar__number">8</time>
-                    <time class="calendar__number">9</time>
-                    <time class="calendar__number">10</time>
-                    <time class="calendar__number">11</time>
-                    <time class="calendar__number">12</time>
-                    <time class="calendar__number">13</time>
-                    <time class="calendar__number">14</time>
-                    <time class="calendar__number">15</time>
-                    <time class="calendar__number">16</time>
-                    <time class="calendar__number">17</time>
-                    <time class="calendar__number">18</time>
-                    <time class="calendar__number">19</time>
-                    <time class="calendar__number">20</time>
-                    <time class="calendar__number">21</time>
-                    <time class="calendar__number">22</time>
-                    <time class="calendar__number">23</time>
-                    <time class="calendar__number">24</time>
-                    <time class="calendar__number">25</time>
-                    <time class="calendar__number">26</time>
-                    <time class="calendar__number">27</time>
-                    <time class="calendar__number">28</time>
-                    <time class="calendar__number">29</time>
-                    <time class="calendar__number">30</time>
-                    <time class="calendar__number">31</time>
-                  </div>
+            </div>
+            <div class="tournaments__right-container">
+              <div class="tournaments__right-block">
+                <div class="archive__wrap">
+                  <h4>Архивы</h4>
+                  <a href="" class="right__link">Декабрь Сочи 2017</a>
+                  <a href="" class="right__link">Январь Москва 2021</a>
+                  <a href="" class="right__link">Июнь 2018</a>
+                  <a href="" class="right__link">Октябрь 2017</a>
+                  <a href="" class="right__link">Август Пятигорск 2021</a>
+                </div>
+                <div class="gallery__wrap">
+                  <h4>Галерея</h4>
                 </div>
               </div>
             </div>
-            <h3 class="title__bottom">Тоже хочешь провести тренировочный сбор?</h3>
-            <div class="fees__btn-bottom">
-              <button class="fees__btn btn__reset">Подай заявку</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="news section__all">
-        <div class="container">
-          <h2 class="news__title heading__site">Новости</h2>
-          <div class="news__block-add">
-            <div class="news__block">
-              <div class="news__block-item">
-                <div class="photo__block news__photo-first">
-                  <img src="./img/news_1.jpg" alt="#" />
-                </div>
-                <div class="news__info">
-                  <strong class="news__name">
-                    <a href="" class="news__link">Проводим супер турнир с Геннадием Скляр</a>
-                  </strong>
-                  <p class="news__descr">
-                    В РПЛ три клуба, в заявке которых по пять экс-игроков «Спартака», имеющих опыт игры за основу нашего
-                    клуба.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="news__block">
-              <div class="news__block-item">
-                <div class="photo__block news__photo-second">
-                  <img src="./img/news_2.jpg" alt="#" />
-                </div>
-                <div class="news__info">
-                  <strong class="news__name">
-                    <a href="" class="news__link">Провели тур в Москве</a>
-                  </strong>
-                  <p class="news__descr">
-                    В РПЛ три клуба, в заявке которых по пять экс-игроков «Спартака», имеющих опыт игры за основу нашего
-                    клуба.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="news__block">
-              <div class="news__block-item">
-                <div class="photo__block news__photo-first">
-                  <img src="./img/news_3.jpg" alt="#" />
-                </div>
-                <div class="news__info">
-                  <strong class="news__name">
-                    <a href="" class="news__link">Провели тур в Москве</a>
-                  </strong>
-                  <p class="news__descr">
-                    В РПЛ три клуба, в заявке которых по пять экс-игроков «Спартака», имеющих опыт игры за основу нашего
-                    клуба.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="news__button-block">
-            <button class="news__btn btn__reset">Все новости</button>
           </div>
         </div>
       </section>
