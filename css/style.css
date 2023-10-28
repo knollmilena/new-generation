@@ -88,6 +88,7 @@ p {
 .container__header {
   width: 100%;
   min-width: 320px;
+  /* position: fixed; */
   background-color: var(--blue-color);
 }
 
