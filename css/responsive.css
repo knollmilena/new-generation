@@ -74,27 +74,6 @@
     right: -47px;
   }
 }
-
-@media (max-width: 1160px) {
-  /* СБОРЫ */
-  .right__link {
-    font-size: 16px;
-  }
-
-  .archive__wrap h4 {
-    font-size: 28px;
-  }
-
-  .gallery__wrap h4 {
-    font-size: 28px;
-  }
-
-  .tab {
-    font-size: 28px;
-  }
-  /* СБОРЫ */
-}
-
 @media (max-width: 1098px) {
   .main__content {
     display: flex;
@@ -102,6 +81,11 @@
   }
   .tabs__link {
     font-size: 28px;
+  }
+  .left__block-01 {
+    max-width: 992px;
+    border: none;
+    padding: 0;
   }
   .gallery__wrap {
     display: none;
@@ -112,35 +96,6 @@
   .block__tab_01 {
     padding: 48px 85px 55px 39px;
   }
-  /* СБОРЫ */
-
-  .inner__block {
-    display: block;
-  }
-
-  .block__right-content {
-    border-left: none;
-  }
-
-  .right__link {
-    font-size: 20px;
-  }
-  .archive__flex {
-    display: inline-block;
-  }
-  .left__block {
-    max-width: 100%;
-  }
-  .descr__tabs {
-    font-size: 20px;
-  }
-  .block__tab_button div {
-    max-width: 392px;
-  }
-  .block__tab_button {
-    padding: 3.42em 7.36em 4.06em 7.36em;
-  }
-  /* СБОРЫ */
 }
 @media (max-width: 1270px) {
   .modal-wrap--register .form-register {
@@ -278,15 +233,53 @@
     font-size: 30px;
   }
   
-}
+  /* СБОРЫ МЕДИА */
 
-@media (max-width: 990px) {
-  /* СБОРЫ */
-  .block__tab_button {
-    padding: 2.42em 3.36em 4.06em 3.36em;
+  .main__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 992px;
   }
+  .left__block-01 {
+    padding: 0;
+    border: none;
+    max-width: 992px;
+    margin-bottom: 50px;
+  }
+  .tabs__link {
+    font-size: 24px;
+  }
+  .descr__01 {
+    font-size: 20px;
+    line-height: 30px; /* 150% */
+    letter-spacing: -0.3px;
+    margin-bottom: 5.86vw;
+  }
+  .tabs__item {
+    margin-bottom: 6.45vw;
+  }
+  .descr__gps {
+    margin-bottom: 50px;
+  }
+  .block__tab_01 {
+    padding: 48px 54px 55px 39px;
+  }
+  .gallery__wrap {
+    display: none;
+  }
+  .archive__wrap {
+    flex-direction: unset;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .archive__wrap h4 {
+    font-size: 28px;
+  }
+  .right__link:not(:last-of-type) {
+    margin-right: 23px;
+  }
+  
 }
-
 @media (max-width: 855px) {
   .tabs__item {
     display: flex;
@@ -295,6 +288,9 @@
   }
   .tabs__link:nth-child(1) {
     margin-right: 6.17vw;
+  }
+  .block__tab_01 div {
+    margin-right: 10px;
   }
 }
 @media (max-width: 768px) {
@@ -442,11 +438,11 @@
     position: absolute;
     flex-direction: column;
     width: 105dvw; /* понизил ширину появлялся скрол */
-    height: 250dvh; /* Повысил высоту со 100 , меню небыло видно */
+    height: 160dvh; /* Повысил высоту со 100 , меню небыло видно */
     padding: 16.93svw 11.2svw 23.05svw 25.11svw;
     top: 0;
     right: 0;
-    z-index: 2;
+    z-index: 1;
     background: linear-gradient(219deg, #0f1a50 0%, #074d92 100%);
     box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
@@ -483,7 +479,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    padding: 0;
   }
   /* .container__header::before {
         content: "";
@@ -531,56 +526,22 @@
     margin-bottom: 15px;
     margin-right: 0;
   }
+  .block__right-content {
+    padding-left: 0;
+  }
   .block__tab_01 {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 5.21vw 16.22vw;
   }
-  .container__tabs {
-    box-shadow: none;
-    padding: 0;
-  }
-  .inner__block {
-    max-width: 100%;
-  }
-  .left__block {
-    padding: 0;
-  }
-  .title__tabs {
-    font-size: 30px;
-  }
-  .title__navigator {
-    font-size: 30px;
-  }
-  .block__tab_button {
-    flex-direction: column;
-    align-items: center;
-    padding: 40px;
-  }
-  .descr__tab_button {
-    font-size: 24px;
-    max-width: 295px;
-    margin-bottom: 15px;
-  }
-  .btn__tab {
-    margin: 0;
-  }
-  .right__link {
-    font-size: 20px;
-  }
-  .footer__left-block {
-    background-color: var(--orange-color);
-  }
-  /* СБОРЫ КОНЕЦ */
 }
 @media (max-width: 623px) {
   .header__btn {
     padding: 15px 20px;
   }
 }
-@media (max-width: 540px) { 
-  /* МОБИЛКА МЕДИА */
+@media (max-width: 540px) {
   .container {
     max-width: 90.63svw;
     margin: 0 auto;
@@ -759,16 +720,15 @@
 
   .news__block-add {
     flex-direction: column;
-    /* align-items: center; */
   }
   .news__block {
-    max-width: 295px;
+    width: 100%;
   }
   .news__info {
     padding: 23px 19px 29px 22px;
   }
   .photo__block {
-    width: 100%;
+    max-width: 290px;
   }
   /* Отдельный странички ТУринров */
 
@@ -797,62 +757,6 @@
   .block__maps {
     margin-bottom: 50px;
   }
-  .content__block {
-    padding: 0;
-  }
-
-  /* СБОРЫ МОБИЛКА НАЧАЛО */
-  .container h2 {
-    font-size: 24px;
-    margin-bottom: 25px;
-  }
-  .tab {
-    font-size: 18px;
-  }
-  .descr__tabs {
-    font-size: 16px;
-    letter-spacing: -0.24px;
-    margin-bottom: 30px;
-  }
-  .tabs {
-    margin-bottom: 25px;
-  }
-  .title__tabs {
-    font-size: 18px;
-  }
-  .info__navigator {
-    font-size: 16px;
-    margin-bottom: 50px;
-  }
-  .title__navigator {
-    font-size: 18px;
-    margin-bottom: 15px;
-  }
-  .descr__navigator {
-    font-size: 16px;
-    margin-bottom: 50px;
-  }
-  .descr__tab_button {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  .archive__wrap h4 {
-    font-size: 24px;
-  }
-  .archive__flex {
-    display: flex;
-    flex-direction: column;
-  }
-  .right__link:not(:last-of-type) {
-    margin-bottom: 7px;
-  }
-  .inner__block {
-    margin-bottom: 50px;
-  }
-  .block__right-content {
-    padding: 0;
-  }
-  /* СБОРЫ МОБИЛКА КОНЕЦ */
   /* FOOOOOTER */
   .footer__container {
     display: flex;
@@ -865,20 +769,41 @@
   .footer__center-block {
     width: 184px;
   }
-  /* СОЛО СТРАНИЦЫ ТУРНИРА МОБИЛКА */
-  .footer__container {
+  /* СБОРЫ ТАБЫ */
+  .descr__tab_01 {
+    margin-right: 0;
+    font-size: 18px;
+  }
+  .descr__01 {
+    font-size: 16px;
+    line-height: 30px; /* 187.5% */
+    letter-spacing: -0.24px;
+  }
+  .title__01 {
+    font-size: 18px;
+  }
+  .block__tab_01 {
+    padding: 42px 32px 45px 30px;
+  }
+  .archive__wrap h4 {
+    font-size: 24px;
+  }
+  .archive__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .archive__flex {
     display: flex;
     flex-direction: column;
   }
 }
-
 @media (max-width: 489px) {
   .header__btn {
     padding: 10px 20px;
   }
-
   .header__btn:not(:last-of-type) {
     margin-bottom: 15px;
   }
 
- }
+}
