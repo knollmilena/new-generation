@@ -23,35 +23,33 @@ const cross = document.querySelectorAll(".cross");
 const callRegistration = document.querySelector(".entrybtn");
 const accountBtn = document.querySelector(".accountbtn");
 
-modal.addEventListener('click', function(e){
+modal.addEventListener("click", function (e) {
   console.log(e.target, callRegistration);
-  if(e.target === callRegistration){
+  if (e.target === callRegistration) {
     modal.classList.remove("modal-wrap--entry");
     modal.classList.add("modal-wrap--register");
   }
-  
-})
-modal.addEventListener('click', function(e){
-
-  if(e.target === accountBtn){
+});
+modal.addEventListener("click", function (e) {
+  if (e.target === accountBtn) {
     modal.classList.add("modal-wrap--entry");
     modal.classList.remove("modal-wrap--register");
   }
-  
-})
-entry.addEventListener("click", function() {
-    modal.classList.add("modal-wrap--entry");
-})
-console.log(1)
-cross.forEach(function (item) {
-  item.addEventListener("click", function() {
+  if (e.target === modal) {
     modal.classList.remove("modal-wrap--entry");
     modal.classList.remove("modal-wrap--register");
-
-})
-})
-
-
+  }
+});
+entry.addEventListener("click", function () {
+  modal.classList.add("modal-wrap--entry");
+});
+console.log(1);
+cross.forEach(function (item) {
+  item.addEventListener("click", function () {
+    modal.classList.remove("modal-wrap--entry");
+    modal.classList.remove("modal-wrap--register");
+  });
+});
 
 const btnScroll = document.querySelector(".btn-up");
 window.addEventListener("scroll", () => {

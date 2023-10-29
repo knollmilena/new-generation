@@ -8,7 +8,12 @@ html {
   box-sizing: inherit;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -43,7 +48,7 @@ ol {
   --white-color: #fff;
   --blue-color: #1b407f;
   --orange-color: #ff7a00;
-  --orangedark-color: #E1670E;
+  --orangedark-color: #e1670e;
 }
 
 .list__reset {
@@ -140,20 +145,20 @@ ol {
 }
 
 .navbar__link::after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 0.1em;
-	background-color: var(--white-color);
-	opacity: 0;
-	transition: opacity 500ms, transform 500ms;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: var(--white-color);
+  opacity: 0;
+  transition: opacity 500ms, transform 500ms;
 }
 
 .navbar__link:hover::after {
-	opacity: 1;
-	transform: translate3d(0, 0.2em, 0);
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
 }
 
 .navbar__link:focus-visible {
@@ -162,13 +167,13 @@ ol {
 }
 
 .navbar__item a::after {
-	opacity: 1;
-	transform: scale(0);
-	transform-origin: center;
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
 }
 
-.navbar__item a:hover::after{
-	transform: scale(1);
+.navbar__item a:hover::after {
+  transform: scale(1);
 }
 
 /* .navbar__link:hover {
@@ -205,20 +210,20 @@ ol {
 } */
 
 .personal__acc::after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 0.1em;
-	background-color: var(--white-color);
-	opacity: 0;
-	transition: opacity 500ms, transform 500ms;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: var(--white-color);
+  opacity: 0;
+  transition: opacity 500ms, transform 500ms;
 }
 
 .personal__acc:hover::after {
-	opacity: 1;
-	transform: translate3d(0, 0.2em, 0);
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
 }
 
 .personal__acc:focus-visible {
@@ -227,13 +232,13 @@ ol {
 }
 
 .personal__acc::after {
-	opacity: 1;
-	transform: scale(0);
-	transform-origin: center;
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
 }
 
-.personal__acc:hover::after{
-	transform: scale(1);
+.personal__acc:hover::after {
+  transform: scale(1);
 }
 
 .personal__acc:active {
@@ -311,7 +316,7 @@ ol {
   border: 1px solid #fafafa;
 }
 .header__btn:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: -50px;
@@ -504,20 +509,20 @@ ol {
 }
 
 .calendar__link::after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 0.1em;
-	background-color: var(--white-color);
-	opacity: 0;
-	transition: opacity 500ms, transform 500ms;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: var(--white-color);
+  opacity: 0;
+  transition: opacity 500ms, transform 500ms;
 }
 
 .calendar__link:hover::after {
-	opacity: 1;
-	transform: translate3d(0, 0.2em, 0);
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
 }
 
 .calendar__link:focus-visible {
@@ -526,13 +531,13 @@ ol {
 }
 
 .calendar__link::after {
-	opacity: 1;
-	transform: scale(0);
-	transform-origin: center;
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
 }
 
-.calendar__link:hover::after{
-	transform: scale(1);
+.calendar__link:hover::after {
+  transform: scale(1);
 }
 
 .calendar__left-block p {
@@ -667,27 +672,26 @@ ol {
 .fees__btn:hover,
 .fees__btn:active,
 .fees__btn:focus {
-    color: var(--blue-color);
+  color: var(--blue-color);
 }
 .fees__btn:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -50px;
-    bottom: 0;
-    left: 0;
-    border-right: 50px solid transparent;
-    border-top: 60px solid #fdfdfd;
-    transition: transform 0.5s;
-    transform: translateX(-100%);
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -50px;
+  bottom: 0;
+  left: 0;
+  border-right: 50px solid transparent;
+  border-top: 60px solid #fdfdfd;
+  transition: transform 0.5s;
+  transform: translateX(-100%);
+  z-index: -1;
 }
 .fees__btn:hover:before,
 .fees__btn:active:before,
 .fees__btn:focus:before {
-    transform: translateX(0);
+  transform: translateX(0);
 }
-
 
 /* .fees__btn:focus-visible {
   background-color: var(--white-color);
@@ -727,7 +731,6 @@ ol {
   box-shadow: 0px 5px 10px 0px #074d92;
 }
 
-
 .news__block:hover {
   transform: scale(1.1);
 }
@@ -736,9 +739,6 @@ ol {
   outline: 3px solid #074d92;
   outline-offset: 10px;
 }
-
-
-
 
 .news__block:last-child {
   margin-right: 0;
@@ -799,8 +799,6 @@ ol {
   transition: background-color 0.3s ease-in, color 0.3s ease-in, border 0.3s ease-in;
 }
 
-
-
 .news__btn:focus-visible,
 .news__btn:hover,
 .news__btn:active {
@@ -829,10 +827,6 @@ ol {
   transform: translateX(0);
 }
 
-
-
-
-
 .news__link::before {
   position: absolute;
   content: "";
@@ -843,7 +837,7 @@ ol {
 }
 
 .news__link:focus::before {
-  outline: none;  
+  outline: none;
 }
 
 /* FOOTER */
@@ -885,7 +879,7 @@ ol {
 }
 
 .social__link-footer svg path {
-  fill: #D4D4D4;
+  fill: #d4d4d4;
   transition: fill 0.3s ease-in;
 }
 
@@ -958,6 +952,9 @@ ol {
   width: 150px;
   color: transparent;
 }
+.modal-wrap {
+  display: none;
+}
 .modal-wrap--entry {
   position: fixed;
   top: 0;
@@ -992,8 +989,8 @@ ol {
   flex-direction: column;
   align-items: center;
   width: 349px;
-  height: 390px;
-  padding-top: 50px;
+  height: 355px;
+  padding-top: 42px;
   border-radius: 15px;
   background: #fff;
   color: rgba(31, 31, 31, 0.8);
@@ -1007,13 +1004,13 @@ ol {
   visibility: visible;
   position: absolute;
   top: 70px;
-  right: calc(50% - 250px);
+  right: calc(50% - 174.5px);
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 400px;
-  height: 620px;
-  padding-top: 50px;
+  width: 349px;
+  height: 560px;
+  padding-top: 42px;
   border-radius: 15px;
   background: #fff;
   color: rgba(31, 31, 31, 0.8);
@@ -1025,7 +1022,7 @@ ol {
 }
 
 .form-title {
-  margin: 0 0 20px;
+  margin: 0 0 14px;
   color: #1f1f1f;
   font-family: Montserrat;
   font-size: 24px;
@@ -1038,7 +1035,7 @@ ol {
 }
 .input {
   width: 270px;
-  height: 40px;
+  height: 38px;
   padding: 14px 16px 16px 16px;
   align-items: flex-start;
   gap: 16px;
@@ -1047,7 +1044,7 @@ ol {
   background: #fff;
 }
 .input {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 .input:focus-visible {
@@ -1111,10 +1108,10 @@ ol {
 .form-cross {
   position: absolute;
   z-index: 120;
-  height: 25px;
-  width: 25px;
-  top: -77px;
-  right: -42px;
+  height: 23px;
+  width: 18px;
+  top: -72px;
+  right: -23px;
   border: none;
   background: transparent;
   cursor: pointer;
