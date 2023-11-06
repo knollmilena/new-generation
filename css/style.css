@@ -983,7 +983,7 @@ ol {
 .modal-wrap--entry .form-entry {
   visibility: visible;
   position: absolute;
-  top: 150px;
+  top: 70px;
   right: calc(50% - 174px);
   display: flex;
   flex-direction: column;
@@ -1145,4 +1145,70 @@ ol {
 }
 .wrpap {
   position: relative;
+}
+
+/* .modal-wrap.show .form-entry {
+  display: block;
+} */
+
+.modal-wrap.show .form-register,
+.modal-wrap.show .form-entry {
+  animation: modalShow 0.4s both;
+}
+.modal-wrap.hide .form-register,
+.modal-wrap.hide .form-entry {
+  animation: modalHide 0.4s both;
+}
+
+.modal-wrap.left .form-register,
+.modal-wrap.left .form-entry {
+  animation: modalLeft 0.4s both;
+}
+
+.modal-wrap.right .form-register,
+.modal-wrap.right .form-entry {
+  animation: modalRight 0.4s both;
+}
+
+@keyframes modalShow {
+  from {
+    transform: translateY(-300px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(70px);
+    opacity: 1;
+  }
+}
+
+@keyframes modalHide {
+  from {
+    transform: translateY(70px);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-600px);
+    opacity: 0;
+  }
+}
+
+@keyframes modalLeft {
+  from {
+    transform: translateX(70px);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-800px);
+    opacity: 0;
+  }
+}
+@keyframes modalRight {
+  from {
+    transform: translateX(800px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
