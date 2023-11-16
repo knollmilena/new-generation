@@ -248,7 +248,7 @@
   align-items: center;
 }
 .tab{
-  /* cursor: pointer; */
+  cursor: pointer;
   padding: 10px 20px;
   margin: 0px 2px;
   background: var(--blue-color);
@@ -261,7 +261,17 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  transition: color 0.5s ease, background-color 0.3s ease-in;
+  transition: color 0.5s ease, background-color 0.3s linear;
+}
+
+.tab:focus-visible {
+  outline: none;
+  outline-offset: 5px;
+  text-decoration: underline;
+}
+
+.tab:hover {
+  background-color: #0561bd;
 }
 
 .container__tabs{
@@ -272,7 +282,7 @@
   max-width: 1170px;
   border-radius :3px;
   overflow: hidden;
-  padding: 3.13vw 1.56vw;
+  padding: 3.13vw 1.56vw 0 1.56vw;
 }
 .tabs__block{
   display: none;
