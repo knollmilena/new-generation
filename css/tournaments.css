@@ -113,7 +113,7 @@ p {
 
 .click__pages {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: baseline;
 }
 
@@ -125,8 +125,17 @@ p {
   margin-right: 15px;
 }
 
+.pages__arow-left {
+  margin-right: 15px;
+}
+
+.pages__arow-right {
+  margin-left: 15px;
+}
+
 .list__pages {
   display: flex;
+  margin: 0 auto;
 }
 
 .link__pages {
@@ -139,13 +148,7 @@ p {
   letter-spacing: -0.24px;
 }
 
-.arow__left {
-  margin-right: 15px;
-}
 
-.arow__right {
-  margin-left: 15px;
-}
 
 .tournaments__wrap {
   display: flex;
@@ -264,7 +267,7 @@ p {
 .tournaments__right-block {
   display: flex;
   flex-direction: column;
-  padding-left: 59px;
+  padding-left: 22px;
 }
 
 .tournaments__right-block h4 {
@@ -279,6 +282,10 @@ p {
 }
 
 .archive__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  min-width: 140px;
   margin-bottom: 60px;
 }
 

@@ -329,6 +329,17 @@
   .tabs__link:nth-child(1) {
     margin-right: 6.17vw;
   }
+  .news__block-add {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 13px;
+  }
+  .news__block-add .news__block {
+    min-width: 295px;
+  }
+  .news__block {
+    box-shadow: 0px 0px 4px 0px #333;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -501,12 +512,12 @@
   }
 
   .navbar__wrap--active {
+    display: block;
     visibility: visible;
-    position: absolute;
-    flex-direction: column;
-    width: 105dvw; /* понизил ширину появлялся скрол */
-    height: 250dvh; /* Повысил высоту со 100 , меню небыло видно */
-    padding: 16.93svw 11.2svw 23.05svw 25.11svw;
+    position: fixed;
+    width: 105%;
+    height: 100%;
+    padding: 13.93svw 7.2svw 0 15.11svw;
     top: 0;
     right: 0;
     z-index: 2;
@@ -533,7 +544,7 @@
   }
   .navbar__item:not(:last-child) {
     margin-right: 0;
-    margin-bottom: 5.21vw;
+    margin-bottom: 3.21vw;
   }
   .navbar__item:nth-child(6) {
     margin-bottom: 8.46vw;
@@ -973,7 +984,8 @@
  @media (max-width: 320px) {
     /* НОВОСТИ  */
   .news__block {
-    box-shadow: 0 2px 5px 0px #074d92;
+    min-width: 285px !important;
+    box-shadow: none;
   }
   .news__block-add {
     padding-bottom: 10px;

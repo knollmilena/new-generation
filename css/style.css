@@ -157,7 +157,7 @@ ol {
 }
 
 .navbar__link:focus-visible {
-  outline: 2px ridge #f90;
+  outline: 2px solid #f90;
   outline-offset: 3px;
 }
 
@@ -286,7 +286,6 @@ ol {
 }
 
 .header__btn {
-  max-width: 315px;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -304,7 +303,7 @@ ol {
   transition: background-color 0.3s ease-out, color 0.3s ease-in, border 0.3s ease-in;
 }
 
-.header__btn:focus,
+.header__btn:focus-visible,
 .header__btn:hover,
 .header__btn:active {
   color: var(--blue-color);
@@ -324,7 +323,7 @@ ol {
   transform: translateX(-100%);
   z-index: -1;
 }
-.header__btn:focus:before,
+.header__btn:focus-visible:before,
 .header__btn:hover:before,
 .header__btn:active:before {
   transform: translateX(0);
@@ -433,7 +432,7 @@ ol {
 .member__descr {
   color: #000;
   font-family: Open Sans;
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 18px; /* 150% */
@@ -536,6 +535,14 @@ ol {
 	transform: scale(1);
 }
 
+.fees__block-arow {
+  display: flex;
+}
+
+.fees__arow-left {
+  margin-right: 20px;
+}
+
 .calendar__left-block p {
   min-width: 281px;
   color: rgba(255, 255, 255, 0.8);
@@ -559,7 +566,6 @@ ol {
 }
 
 .name__month {
-  margin-right: 70px;
   color: #fff;
   font-family: Montserrat;
   font-size: 36px;
@@ -667,7 +673,7 @@ ol {
 
 .fees__btn:hover,
 .fees__btn:active,
-.fees__btn:focus {
+.fees__btn:focus-visible {
     color: var(--blue-color);
 }
 .fees__btn:before {
@@ -685,7 +691,7 @@ ol {
 }
 .fees__btn:hover:before,
 .fees__btn:active:before,
-.fees__btn:focus:before {
+.fees__btn:focus-visible:before {
     transform: translateX(0);
 }
 
@@ -717,6 +723,8 @@ ol {
   margin-bottom: 53px;
   gap: 20px;
 }
+
+
 
 .news__block {
   position: relative;
