@@ -8,9 +8,12 @@ html {
   box-sizing: inherit;
 }
 
-
-h1, h2, h3, h4, h5, h6 {
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -45,14 +48,16 @@ ol {
   --white-color: #fff;
   --blue-color: #1b407f;
   --orange-color: #ff7a00;
-  --orangedark-color: #E1670E;
-
+  --orangedark-color: #e1670e;
 }
 
 .list__reset {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+.stop-scroll {
+  overflow: hidden;
 }
 
 .btn__reset {
@@ -143,21 +148,20 @@ ol {
 }
 
 .navbar__link::after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 0.1em;
-	background-color: var(--white-color);
-	opacity: 0;
-	transition: opacity 500ms, transform 500ms;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: var(--white-color);
+  opacity: 0;
+  transition: opacity 500ms, transform 500ms;
 }
 
 .navbar__link:hover::after {
-	opacity: 1;
-	transform: translate3d(0, 0.2em, 0);
-
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
 }
 
 .navbar__link:focus-visible {
@@ -166,14 +170,13 @@ ol {
 }
 
 .navbar__item a::after {
-	opacity: 1;
-	transform: scale(0);
-	transform-origin: center;
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
 }
 
-.navbar__item a:hover::after{
-	transform: scale(1);
-
+.navbar__item a:hover::after {
+  transform: scale(1);
 }
 
 /* .navbar__link:hover {
@@ -210,21 +213,20 @@ ol {
 } */
 
 .personal__acc::after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 0.1em;
-	background-color: var(--white-color);
-	opacity: 0;
-	transition: opacity 500ms, transform 500ms;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: var(--white-color);
+  opacity: 0;
+  transition: opacity 500ms, transform 500ms;
 }
 
 .personal__acc:hover::after {
-	opacity: 1;
-	transform: translate3d(0, 0.2em, 0);
-
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
 }
 
 .personal__acc:focus-visible {
@@ -233,14 +235,13 @@ ol {
 }
 
 .personal__acc::after {
-
-	opacity: 1;
-	transform: scale(0);
-	transform-origin: center;
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
 }
 
-.personal__acc:hover::after{
-	transform: scale(1);
+.personal__acc:hover::after {
+  transform: scale(1);
 }
 
 .personal__acc:active {
@@ -293,7 +294,6 @@ ol {
 }
 
 .header__btn {
-
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -319,7 +319,7 @@ ol {
 }
 
 .header__btn:before {
-  content: '';
+  content: "";
 
   position: absolute;
   top: 0;
@@ -336,7 +336,6 @@ ol {
 .header__btn:focus-visible:before,
 .header__btn:hover:before,
 .header__btn:active:before {
-
   transform: translateX(0);
 }
 
@@ -515,21 +514,20 @@ ol {
 }
 
 .calendar__link::after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 0.1em;
-	background-color: var(--white-color);
-	opacity: 0;
-	transition: opacity 500ms, transform 500ms;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: var(--white-color);
+  opacity: 0;
+  transition: opacity 500ms, transform 500ms;
 }
 
 .calendar__link:hover::after {
-	opacity: 1;
-	transform: translate3d(0, 0.2em, 0);
-
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
 }
 
 .calendar__link:focus-visible {
@@ -538,13 +536,13 @@ ol {
 }
 
 .calendar__link::after {
-	opacity: 1;
-	transform: scale(0);
-	transform-origin: center;
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
 }
 
-.calendar__link:hover::after{
-	transform: scale(1);
+.calendar__link:hover::after {
+  transform: scale(1);
 }
 
 .fees__block-arow {
@@ -575,7 +573,6 @@ ol {
 .fees__arow-left:active,
 .fees__arow-right:active {
   color: var(--orangedark-color);
-
 }
 
 .calendar__left-block p {
@@ -709,28 +706,26 @@ ol {
 .fees__btn:hover,
 .fees__btn:active,
 .fees__btn:focus-visible {
-    color: var(--blue-color);
+  color: var(--blue-color);
 }
 .fees__btn:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -50px;
-    bottom: 0;
-    left: 0;
-    border-right: 50px solid transparent;
-    border-top: 60px solid #fdfdfd;
-    transition: transform 0.5s;
-    transform: translateX(-100%);
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -50px;
+  bottom: 0;
+  left: 0;
+  border-right: 50px solid transparent;
+  border-top: 60px solid #fdfdfd;
+  transition: transform 0.5s;
+  transform: translateX(-100%);
+  z-index: -1;
 }
 .fees__btn:hover:before,
 .fees__btn:active:before,
 .fees__btn:focus-visible:before {
-    transform: translateX(0);
+  transform: translateX(0);
 }
-
-
 
 /* .fees__btn:focus-visible {
   background-color: var(--white-color);
@@ -760,14 +755,11 @@ ol {
   gap: 20px;
 }
 
-
-
 .news__block {
   position: relative;
   border-radius: 10px;
   background: #fff;
   box-shadow: 0px 4px 4px 0px #333333;
-
 }
 
 .news__block:focus {
@@ -871,8 +863,7 @@ ol {
 }
 
 .news__link:focus::before {
-  outline: none;  
-
+  outline: none;
 }
 
 /* FOOTER */
@@ -907,8 +898,8 @@ ol {
 
 .social__block {
   display: flex;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   width: 100%;
   text-align: center;
 }
@@ -920,7 +911,7 @@ ol {
   background: #f1f1f1;
   margin: 4px;
   border-radius: 30%;
-  box-shadow:-5px 5px 15px -5px #f1f1f1; 
+  box-shadow: -5px 5px 15px -5px #f1f1f1;
   overflow: hidden;
   position: relative;
   transition: 0.8s linear;
@@ -932,9 +923,8 @@ ol {
   transition: 0.4s linear;
 }
 
-
 .social__link-footer:nth-child(1) i {
-  color:#3b5998;
+  color: #3b5998;
 }
 
 .social__link-footer:nth-child(2) i {
@@ -942,11 +932,11 @@ ol {
 }
 
 .social__link-footer:nth-child(3) i {
-  color:#0088cc;
+  color: #0088cc;
 }
 
 .social__link-footer:nth-child(4) i {
-  color: #833AB4;
+  color: #833ab4;
 }
 
 .social__link-footer:hover {
@@ -959,13 +949,13 @@ ol {
 }
 
 .social__link-footer:before {
-  content:"";
-  position:absolute;
-  width:120%;
-  height:120%;
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
   transform: rotate(45deg);
   left: -110%;
-  top:90%;
+  top: 90%;
 }
 
 .social__link-footer:nth-child(1)::before {
@@ -977,7 +967,7 @@ ol {
 }
 
 .social__link-footer:nth-child(3)::before {
-  background:#0088cc;
+  background: #0088cc;
 }
 
 .social__link-footer:nth-child(4)::before {
@@ -993,10 +983,10 @@ ol {
 @keyframes aaa {
   0% {
     left: -110%;
-    top:90%;
+    top: 90%;
   }
   50% {
-    left:10%;
+    left: 10%;
     top: -30%;
   }
   100% {
