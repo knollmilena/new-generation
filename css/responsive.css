@@ -103,9 +103,7 @@
   .tabs__link {
     font-size: 28px;
   }
-  .gallery__wrap {
-    display: none;
-  }
+
   .right__link:not(:last-of-type) {
     margin-right: 23px;
   }
@@ -140,11 +138,38 @@
   .block__tab_button {
     padding: 3.42em 7.36em 4.06em 7.36em;
   }
+  .gallery__block-link {
+    display: flex;
+    /* flex-direction: unset; */
+    max-width: 100%;
+    overflow-y: auto;
+    overflow-x: scroll;
+    padding-bottom: 10px;
+  }
+  .gallery__wrap h4 {
+    margin-bottom: 7px;
+  }
+  .gallery__wrap {
+    max-width: 920px;
+  }
+  .block__right-content {
+    padding: 0;
+  }
+  .gallery__link img {
+    max-width: 210px;
+  }
+  .gallery__link:not(:last-of-type) {
+    margin-right: 10px;
+  }
+
   /* СБОРЫ */
 }
 @media (max-width: 1270px) {
   .modal-wrap--register .form-register {
     top: 30px;
+  }
+  .title__tournaments-application {
+    font-size: calc(16px + (32 - 20) * ((100vw - 320px) / (1270 - 320))) !important;
   }
 }
 
@@ -267,6 +292,36 @@
   }
   /* TУРНИРЫ МЕДИА */
 
+  .internal__block {
+    max-width: 610px;
+    padding-right: 40px;
+  }
+  .tournaments__right-block {
+    padding-left: 40px;
+  }
+  .right__link:not(:last-of-type) {
+    margin-right: 10px;
+  }
+  .archive__wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .news__info {
+    padding: 20px 17px 20px 25px;
+  }
+  .title__tournaments-application {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .container__application {
+    padding: 46px 21px;
+  }
+  .tournaments__btn {
+    padding: 15px 55px !important;
+  }
+
   /* Отдельные страницы под каждый турнир */
   .content__block {
     padding: 0 42px 0 0;
@@ -285,7 +340,9 @@
   .block__tab_button {
     padding: 2.42em 3.36em 4.06em 3.36em;
   }
+  /* TOURNAMENTS */
 }
+
 
 @media (max-width: 855px) {
   .tabs__item {
@@ -295,6 +352,32 @@
   }
   .tabs__link:nth-child(1) {
     margin-right: 6.17vw;
+  }
+
+  .news__block-add {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 13px;
+  }
+  .news__block-add .news__block {
+    min-width: 295px;
+  }
+  .news__block {
+    box-shadow: 0px 0px 4px 0px #333;
+  }
+  .tournaments__wrap {
+    flex-direction: column;
+  }
+  .internal__block {
+    max-width: 100%;
+    border-right: none;
+  }
+  .archive__wrap {
+    flex-direction: column;
+  }
+  .gallery__block-link {
+    display: flex;
+    flex-direction: unset;
   }
 }
 @media (max-width: 768px) {
@@ -380,9 +463,6 @@
   .news {
     padding-bottom: 60px;
   }
-  .photo__block {
-    width: 295px;
-  }
   .header__bottom {
     background-image: none;
   }
@@ -391,6 +471,39 @@
     max-width: 586px;
     margin-left: 0px;
   }
+  /* TOURNAMENTS */
+  .tournaments__wrap {
+    flex-direction: column;
+  }
+  .archive__wrap {
+    display: block;
+  }
+  .right__link:not(:last-of-type) {
+    margin-right: 23px;
+  }
+  .tournaments__right-block {
+    padding-left: 0;
+  }
+  .internal__block {
+    max-width: 670px;
+    padding-right: 0;
+  }
+  .news__link {
+    display: inline-block;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+  .news__descr {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .news__info {
+    padding: 30px 25px;
+  }
+  .title__tournaments-application {
+    font-size: 30px;
+  }
+
   .header__burger {
     display: block;
     position: relative;
@@ -438,12 +551,13 @@
   }
 
   .navbar__wrap--active {
+    display: block;
     visibility: visible;
-    position: absolute;
-    flex-direction: column;
-    width: 105dvw; /* понизил ширину появлялся скрол */
-    height: 250dvh; /* Повысил высоту со 100 , меню небыло видно */
-    padding: 16.93svw 11.2svw 23.05svw 25.11svw;
+    position: fixed;
+    width: 105%;
+    height: 100%;
+    padding: 13.93svw 7.2svw 0 15.11svw;
+
     top: 0;
     right: 0;
     z-index: 2;
@@ -470,7 +584,7 @@
   }
   .navbar__item:not(:last-child) {
     margin-right: 0;
-    margin-bottom: 5.21vw;
+    margin-bottom: 3.21vw;
   }
   .navbar__item:nth-child(6) {
     margin-bottom: 8.46vw;
@@ -511,13 +625,7 @@
     height: 55px;
   }
   /* Отдельные страницы под каждый турнир */
-  .internal__block p {
-    font-size: 24px;
-    margin-bottom: 7.81vw;
-  }
-  .tournaments__right-container {
-    display: none;
-  }
+
   .internal__block {
     border: none;
   }
@@ -565,6 +673,9 @@
   }
   .btn__tab {
     margin: 0;
+
+    padding: 20px 35px;
+
   }
   .right__link {
     font-size: 20px;
@@ -573,12 +684,27 @@
     background-color: var(--orange-color);
   }
   /* СБОРЫ КОНЕЦ */
+
 }
 @media (max-width: 623px) {
   .header__btn {
     padding: 15px 20px;
   }
+  /* TOURNAMENTS */
+  .tournaments__block-flex-1,
+  .tournaments__block-flex-2,
+  .tournaments__block-flex-3 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .news__block {
+    /* max-width: 290px; */
+    width: 100%;
+    max-width: 350px;
+    
+  }
 }
+
 @media (max-width: 540px) { 
   /* МОБИЛКА МЕДИА */
   .container {
@@ -657,7 +783,6 @@
     padding: 46px 27px;
   }
   .right__block-photo {
-    width: 236px;
     margin-bottom: 15px;
   }
   .about__block-right {
@@ -675,7 +800,9 @@
   }
   .team__member {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     width: 100%;
   }
@@ -685,10 +812,15 @@
     line-height: normal;
   }
   .member__photo-first {
-    width: 290px;
+    max-width: 300px;
+    min-width: 285px;
+  }
+  .member__photo-first img {
+    width: 100%;
   }
   .member__block {
-    width: 290px;
+    max-width: 300px;
+    min-width: 285px;
   }
   .member__name {
     font-size: 18px;
@@ -760,9 +892,13 @@
   .news__block-add {
     flex-direction: column;
     /* align-items: center; */
+
+    align-items: center;
   }
   .news__block {
-    max-width: 295px;
+    max-width: 350px;
+    /* min-width: 295px; */
+
   }
   .news__info {
     padding: 23px 19px 29px 22px;
@@ -799,6 +935,16 @@
   }
   .content__block {
     padding: 0;
+
+  }
+
+  /* TOURNAMENTS */
+
+  .tournaments__right-block {
+    display: none;
+  }
+  .news__block {
+    width: 100%;
   }
 
   /* СБОРЫ МОБИЛКА НАЧАЛО */
@@ -817,6 +963,7 @@
   .tabs {
     margin-bottom: 25px;
   }
+
   .title__tabs {
     font-size: 18px;
   }
@@ -879,6 +1026,17 @@
 
   .header__btn:not(:last-of-type) {
     margin-bottom: 15px;
+  }
+
+ }
+ @media (max-width: 320px) {
+    /* НОВОСТИ  */
+  .news__block {
+    min-width: 285px !important;
+    box-shadow: none;
+  }
+  .news__block-add {
+    padding-bottom: 10px;
   }
 
  }

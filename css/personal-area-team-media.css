@@ -13,9 +13,9 @@
   }
 }
 @media (max-width: 958px) {
-  .container {
+  /* .container {
     max-width: 668px;
-  }
+  } */
   .section__all {
     padding-top: 60px;
     padding-bottom: 60px;

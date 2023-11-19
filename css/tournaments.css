@@ -95,21 +95,26 @@ p {
 }
 
 .internal__block {
+  max-width: 820px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   padding-bottom: 54px;
-  width: 830px;
   gap: 20px;
   padding-right: 55px;
   border-right: 1px solid rgba(82, 82, 82, 0.45);
 }
 
+.tournaments__block-flex-1,
+.tournaments__block-flex-2,
+.tournaments__block-flex-3 {
+  display: flex;
+  gap: 20px;
+}
+
 .click__pages {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: baseline;
-  padding-left: 318px;
-  padding-right: 363px;
 }
 
 .item__pages {
@@ -120,8 +125,17 @@ p {
   margin-right: 15px;
 }
 
+.pages__arow-left {
+  margin-right: 15px;
+}
+
+.pages__arow-right {
+  margin-left: 15px;
+}
+
 .list__pages {
   display: flex;
+  margin: 0 auto;
 }
 
 .link__pages {
@@ -134,13 +148,7 @@ p {
   letter-spacing: -0.24px;
 }
 
-.arow__left {
-  margin-right: 15px;
-}
 
-.arow__right {
-  margin-left: 15px;
-}
 
 .tournaments__wrap {
   display: flex;
@@ -173,17 +181,8 @@ p {
   letter-spacing: -0.27px;
 }
 
-/* .tournaments__left-block {
-    display: flex;
-    flex-wrap: wrap;
-    width: 830px;
-    gap: 17px;
-    padding-right: 55px;
-    border-right: 1px solid rgba(82, 82, 82, 0.45);
-} */
-
 .container__application {
-  width: 774px;
+  max-width: 774px;
   margin-top: 22px;
   margin-bottom: 22px;
   padding: 46px 113px 54px 94px;
@@ -193,8 +192,9 @@ p {
 
 .news__block {
   display: flex;
+  /* max-width: 377px; */
+  width: calc(100% - 50px);
   flex-direction: column;
-  width: 377px;
   border-radius: 10px;
   background: #fff;
 }
@@ -237,7 +237,8 @@ p {
 
 .tournaments__btn:hover,
 .tournaments__btn:active,
-.tournaments__btn:focus {
+.tournaments__btn:focus-visible {
+
     color: var(--blue-color);
 }
 .tournaments__btn:before {
@@ -255,7 +256,8 @@ p {
 }
 .tournaments__btn:hover:before,
 .tournaments__btn:active:before,
-.tournaments__btn:focus:before {
+.tournaments__btn:focus-visible:before {
+
     transform: translateX(0);
 }
 
@@ -273,7 +275,7 @@ p {
 .tournaments__right-block {
   display: flex;
   flex-direction: column;
-  padding-left: 59px;
+  padding-left: 22px;
 }
 
 .tournaments__right-block h4 {
@@ -288,6 +290,10 @@ p {
 }
 
 .archive__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  min-width: 140px;
   margin-bottom: 60px;
 }
 
@@ -338,4 +344,20 @@ p {
 
 .right__link:not(:last-of-type) {
   margin-bottom: 20px;
+}
+
+.gallery__link {
+  display: inline-block;
+}
+
+.gallery__link:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.gallery__wrap {
+  max-width: 320px;
+}
+
+.gallery__block-link {
+
 }
