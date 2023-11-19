@@ -231,7 +231,7 @@ p {
 
 .tournaments__btn:hover,
 .tournaments__btn:active,
-.tournaments__btn:focus {
+.tournaments__btn:focus-visible {
     color: var(--blue-color);
 }
 .tournaments__btn:before {
@@ -249,7 +249,7 @@ p {
 }
 .tournaments__btn:hover:before,
 .tournaments__btn:active:before,
-.tournaments__btn:focus:before {
+.tournaments__btn:focus-visible:before {
     transform: translateX(0);
 }
 
@@ -336,4 +336,20 @@ p {
 
 .right__link:not(:last-of-type) {
   margin-bottom: 20px;
+}
+
+.gallery__link {
+  display: inline-block;
+}
+
+.gallery__link:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.gallery__wrap {
+  max-width: 320px;
+}
+
+.gallery__block-link {
+
 }

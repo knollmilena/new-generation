@@ -543,6 +543,28 @@ ol {
   margin-right: 20px;
 }
 
+.fees__arow-left,
+.fees__arow-right {
+  transition: background-color 0.3s linear, outline 0.3s ease-in, color 0.3s linear;
+  border: none;
+}
+
+.fees__arow-left:focus-visible,
+.fees__arow-right:focus-visible {
+  outline: 2px solid var(--orange-color);
+  outline-offset: 5px;
+}
+
+.fees__arow-left:hover,
+.fees__arow-right:hover {
+  color: var(--orange-color);
+}
+
+.fees__arow-left:active,
+.fees__arow-right:active {
+  color: var(--orangedark-color);
+}
+
 .calendar__left-block p {
   min-width: 281px;
   color: rgba(255, 255, 255, 0.8);

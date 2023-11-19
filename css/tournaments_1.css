@@ -176,4 +176,17 @@
 
 .tournaments__right-block {
     padding-left: 2.97vw;
+    padding-bottom: 2.97vw;
 }
+.gallery__link {
+    display: inline-block;
+  }
+  
+  .gallery__wrap {
+    max-width: 320px;
+  }
+  .gallery__block-link {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }

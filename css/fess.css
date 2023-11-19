@@ -420,7 +420,7 @@
 
 .btn__tab:hover,
 .btn__tab:active,
-.btn__tab:focus {
+.btn__tab:focus-visible {
   color: var(--blue-color);
   /* border: 1px solid #fafafa; */
 }
@@ -439,7 +439,7 @@
 }
 .btn__tab:hover:before,
 .btn__tab:active:before,
-.btn__tab:focus:before {
+.btn__tab:focus-visible:before {
   transform: translateX(0);
 }
 
@@ -512,6 +512,7 @@
 
 .block__right-content {
   padding-left: 3.13vw;
+  padding-bottom: 3.13vw;
   border-left: 1px solid #666666;
 }
 
@@ -521,3 +522,18 @@
   font-weight: 400;
   line-height: normal;
 }
+
+.gallery__link {
+  display: inline-block;
+}
+
+.gallery__wrap {
+  max-width: 320px;
+}
+.gallery__block-link {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
