@@ -103,6 +103,7 @@
   .tabs__link {
     font-size: 28px;
   }
+
   .right__link:not(:last-of-type) {
     margin-right: 23px;
   }
@@ -160,6 +161,7 @@
   .gallery__link:not(:last-of-type) {
     margin-right: 10px;
   }
+
   /* СБОРЫ */
 }
 @media (max-width: 1270px) {
@@ -341,6 +343,7 @@
   /* TOURNAMENTS */
 }
 
+
 @media (max-width: 855px) {
   .tabs__item {
     display: flex;
@@ -350,6 +353,7 @@
   .tabs__link:nth-child(1) {
     margin-right: 6.17vw;
   }
+
   .news__block-add {
     overflow-x: auto;
     overflow-y: hidden;
@@ -553,6 +557,7 @@
     width: 105%;
     height: 100%;
     padding: 13.93svw 7.2svw 0 15.11svw;
+
     top: 0;
     right: 0;
     z-index: 2;
@@ -620,6 +625,7 @@
     height: 55px;
   }
   /* Отдельные страницы под каждый турнир */
+
   .internal__block {
     border: none;
   }
@@ -667,7 +673,9 @@
   }
   .btn__tab {
     margin: 0;
+
     padding: 20px 35px;
+
   }
   .right__link {
     font-size: 20px;
@@ -676,6 +684,7 @@
     background-color: var(--orange-color);
   }
   /* СБОРЫ КОНЕЦ */
+
 }
 @media (max-width: 623px) {
   .header__btn {
@@ -695,6 +704,7 @@
     
   }
 }
+
 @media (max-width: 540px) { 
   /* МОБИЛКА МЕДИА */
   .container {
@@ -882,11 +892,13 @@
   .news__block-add {
     flex-direction: column;
     /* align-items: center; */
+
     align-items: center;
   }
   .news__block {
     max-width: 350px;
     /* min-width: 295px; */
+
   }
   .news__info {
     padding: 23px 19px 29px 22px;
@@ -923,6 +935,7 @@
   }
   .content__block {
     padding: 0;
+
   }
 
   /* TOURNAMENTS */
@@ -950,6 +963,7 @@
   .tabs {
     margin-bottom: 25px;
   }
+
   .title__tabs {
     font-size: 18px;
   }
@@ -1024,4 +1038,5 @@
   .news__block-add {
     padding-bottom: 10px;
   }
+
  }

@@ -199,6 +199,12 @@ p {
   background: #fff;
 }
 
+.photo__block img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
 .title__tournaments-application {
   color: #f4f4f4;
   text-align: center;
@@ -232,6 +238,7 @@ p {
 .tournaments__btn:hover,
 .tournaments__btn:active,
 .tournaments__btn:focus-visible {
+
     color: var(--blue-color);
 }
 .tournaments__btn:before {
@@ -250,6 +257,7 @@ p {
 .tournaments__btn:hover:before,
 .tournaments__btn:active:before,
 .tournaments__btn:focus-visible:before {
+
     transform: translateX(0);
 }
 

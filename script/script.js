@@ -17,41 +17,61 @@ menuLinks.forEach(function (el) {
 });
 
 // MODAL
+//кнопка Войти
 const entry = document.querySelector(".personal__acc");
+const regBtn = document.querySelector(".regbtn");
+// обертка модалок + оверфлоу
 const modal = document.querySelector(".modal-wrap");
+//крестик
 const cross = document.querySelectorAll(".cross");
+//у меня нет аккаунта - открытие формы регистрации
 const callRegistration = document.querySelector(".entrybtn");
+//у меня уже есть аккаунт - открытие формы входа
 const accountBtn = document.querySelector(".accountbtn");
 
-modal.addEventListener('click', function(e){
-  console.log(e.target, callRegistration);
-  if(e.target === callRegistration){
-    modal.classList.remove("modal-wrap--entry");
-    modal.classList.add("modal-wrap--register");
+modal.addEventListener("click", function (e) {
+  if (e.target === callRegistration) {
+    modal.classList.remove("right");
+    modal.classList.add("left");
+    function hideForm() {
+      modal.classList.remove("modal-wrap--entry", "left", "right");
+      modal.classList.add("modal-wrap--register", "right");
+    }
+    setTimeout(hideForm, 400);
   }
-  
-})
-modal.addEventListener('click', function(e){
-
-  if(e.target === accountBtn){
-    modal.classList.add("modal-wrap--entry");
+  if (e.target === accountBtn) {
+    modal.classList.remove("right");
+    modal.classList.add("left");
+    function hideForm() {
+      modal.classList.remove("modal-wrap--register", "left", "right");
+      modal.classList.add("modal-wrap--entry", "right");
+    }
+    setTimeout(hideForm, 400);
+  }
+  if (e.target === modal) {
+    modal.classList.remove("modal-wrap--entry");
     modal.classList.remove("modal-wrap--register");
   }
-  
-})
-entry.addEventListener("click", function() {
-    modal.classList.add("modal-wrap--entry");
-})
-console.log(1)
+});
+
+entry.addEventListener("click", function () {
+  modal.classList.add("modal-wrap--entry", "show");
+});
+regBtn.addEventListener("click", () => {
+  modal.classList.add("modal-wrap--register", "show");
+});
 cross.forEach(function (item) {
-  item.addEventListener("click", function() {
-    modal.classList.remove("modal-wrap--entry");
-    modal.classList.remove("modal-wrap--register");
+  item.addEventListener("click", function () {
+    modal.classList.add("hide");
 
-})
-})
-
-
+    function removeAnimation() {
+      modal.classList.remove("modal-wrap--entry");
+      modal.classList.remove("modal-wrap--register");
+      modal.classList.remove("hide", "show", "right");
+    }
+    setTimeout(removeAnimation, 350);
+  });
+});
 
 const btnScroll = document.querySelector(".btn-up");
 window.addEventListener("scroll", () => {
@@ -63,6 +83,5 @@ window.addEventListener("scroll", () => {
 });
 
 btnScroll.addEventListener("click", () => {
-  // document.documentElement.scrollTop = 0;
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
