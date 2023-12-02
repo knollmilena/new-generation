@@ -472,28 +472,10 @@ ol {
   background: linear-gradient(132deg, #074d92 0%, #0f1a50 100%);
 }
 
-.month {
-  color: #f4f4f4;
-}
-
-.days {
-  color: #f1f1f1;
-}
-
 .calendar__fees {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
-}
-
-.calendar__right-block {
-  display: inline-grid;
-  justify-content: center;
-  align-items: center;
-  width: 490px;
-  background: none;
-  padding-left: 85px;
-  padding-right: 63px;
 }
 
 .calendar__left-block {
@@ -575,7 +557,6 @@ ol {
 .fees__arow-left:active,
 .fees__arow-right:active {
   color: var(--orangedark-color);
-
 }
 
 .calendar__left-block p {
@@ -592,23 +573,6 @@ ol {
   margin-bottom: 20px;
 }
 
-.month {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 490px;
-  margin-bottom: 37px;
-}
-
-.name__month {
-  color: #fff;
-  font-family: Montserrat;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
 .days {
   /* display: grid;
     justify-content: center;
@@ -617,53 +581,6 @@ ol {
   justify-content: space-around;
   grid-template-columns: repeat(7, 1fr);
   height: 50px;
-}
-
-.weekday {
-  display: flex;
-  flex-direction: column;
-  height: 83px;
-  justify-self: center;
-  align-self: center;
-  text-align: center;
-  color: #a6a2a2;
-  text-align: center;
-  font-family: Open Sans;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-
-.block__days {
-  width: 40px;
-}
-
-.test__div-block {
-  width: 490px;
-}
-
-.dates {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  margin-bottom: 45px;
-}
-
-.calendar__number {
-  color: #fff;
-  text-align: center;
-  height: 50px;
-  color: #fff;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
-
-.calendar__number:nth-child(11) {
-  background-color: var(--orange-color);
 }
 
 .title__bottom {
@@ -684,6 +601,30 @@ ol {
   display: flex;
   justify-content: center;
 }
+/* SLIDERS FEES */
+
+.slider__container {
+  max-width: 500px;
+  max-height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider__img {
+  max-width: 500px;
+  border-radius: 15px;
+}
+
+.slider__container {
+  width: 50%;
+}
+
+.slider__block {
+  display: flex;
+  transition: all 1s;
+}
+
+/* SLIDER FEES END */
 
 .fees__btn {
   cursor: pointer;

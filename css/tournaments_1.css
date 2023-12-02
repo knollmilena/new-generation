@@ -191,3 +191,15 @@
     gap: 20px;
   }
 
+
+  @media (max-width: 1098px) {
+    .gallery__block-link {
+        display: flex;
+        flex-direction: column !important;
+    }
+  }
+  @media (max-width: 855px) {
+    .gallery__block-link {
+        flex-direction: unset !important;
+    }
+  }

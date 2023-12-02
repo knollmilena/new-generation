@@ -1,0 +1,104 @@
+.gallery {
+    padding-top: 100px;
+}
+
+.gallery__photo-link {
+    position: relative;
+    display: block;
+    max-width: 380px;
+}
+
+.gallery__photo-link:hover .gallery__block-text {
+    transition: 0.9s;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.gallery__block-text {
+    position: absolute;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #0000009C;
+    bottom: 0;
+    color: #FFF;
+    width: 100%;
+    right: 0px;
+    text-align: center;
+    opacity: 0; transition: 0.9s;
+}
+
+.tekst_sverhu_kartinki_sprava_1 span {
+    background-color: #00000094; 
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 17px; /* 106.25% */
+    letter-spacing: -0.24px;
+    
+}
+
+.gallery__photo-link img {
+    width: 100%;
+    height: 100%;
+}
+
+/* .gallery__photo-link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.32) 36.14%, rgba(137, 137, 137, 0.00) 100%);
+    opacity: 0.5;
+} */
+
+.gallery__hero {
+    margin-bottom: 100px;
+}
+
+.gallery__hero h1 {
+    color: #1F1F1F;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 37px;
+}
+
+.gallery__block-title {
+    color: #1F1F1F;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 22px;
+}
+
+.gallery__photo-link:not(:last-of-type) {
+    margin-right: 20px;
+}
+
+.gallery__block-one,
+.gallery__block-two,
+.gallery__block-three,
+.gallery__block-four,
+.gallery__block-five {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery__block-one,
+.gallery__block-two,
+.gallery__block-three,
+.gallery__block-four,
+.gallery__block-five:not(:last-of-type) {
+    margin-bottom: 37px;
+}
+
+.gallery__block-link {
+    display: flex;
+}
