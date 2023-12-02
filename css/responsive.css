@@ -149,7 +149,7 @@
     max-width: 100%;
     overflow-y: auto;
     overflow-x: scroll;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
   }
   .gallery__wrap h4 {
     margin-bottom: 7px;
@@ -669,7 +669,7 @@
   .block__tab_button {
     flex-direction: column;
     align-items: center;
-    padding: 40px;
+    padding: 25px;
   }
   .descr__tab_button {
     font-size: 24px;
@@ -678,8 +678,7 @@
   }
   .btn__tab {
     margin: 0;
-
-    padding: 20px 35px;
+    padding: 10px 23px;
 
   }
   .right__link {
@@ -945,9 +944,6 @@
 
   /* TOURNAMENTS */
 
-  .tournaments__right-block {
-    display: none;
-  }
   .news__block {
     width: 100%;
   }
@@ -1021,6 +1017,16 @@
   .footer__container {
     display: flex;
     flex-direction: column;
+  }
+  /* GALLERY */
+  .gallery {
+    padding-top: 30px;
+  }
+  .gallery__block-title {
+    font-size: 20px;
+  }
+  .gallery__hero h1 {
+    font-size: 38px;
   }
 }
 

@@ -350,7 +350,13 @@
   font-size: 32px;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 20px;
 }
+
+.navigator__fees {
+  margin-bottom: 20px;
+}
+
 
 .info__navigator {
   color: rgba(31, 31, 31, 0.80);
@@ -517,7 +523,7 @@
 }
 
 .block__right-content {
-  padding-left: 3.13vw;
+  padding-left: 2.13vw;
   padding-bottom: 3.13vw;
 
   border-left: 1px solid #666666;
@@ -528,11 +534,16 @@
   font-size: 32px;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 10px;
 }
 
 
 .gallery__link {
   display: inline-block;
+}
+
+.gallery__link img {
+  border-radius: 10px;
 }
 
 .gallery__wrap {

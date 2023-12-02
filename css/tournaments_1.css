@@ -172,6 +172,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-bottom: 15px;
 }
 
 .tournaments__right-block {
@@ -180,7 +181,11 @@
 }
 .gallery__link {
     display: inline-block;
-  }
+}
+
+.gallery__link img {
+    border-radius: 10px;
+}
   
   .gallery__wrap {
     max-width: 320px;
