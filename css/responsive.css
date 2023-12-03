@@ -189,7 +189,7 @@
     margin-right: 2.93vw;
   }
   .navbar__menu {
-    margin-right: 6.05vw;
+    margin-right: 3.05vw;
   }
   .navbar__link {
     font-size: 14px;
@@ -337,7 +337,18 @@
   .command__block h4 {
     font-size: 30px;
   }
-  
+  /* SUB MENU */
+  .sub__link {
+    font-size: 16px;
+  }
+
+  .submenu {
+    left: 45px;
+  }
+
+
+
+  /* SUB MENU END */
 }
 
 @media (max-width: 990px) {
@@ -578,6 +589,14 @@
     margin-right: 0;
     /* background-color: #000; */
   }
+  /* SUBMENU */
+  .submenu {
+    left: 120px;
+    background: linear-gradient(219deg, #0f1a50 0%, #074d92 100%);
+  }
+
+
+  /* SUBMENU END */
 
   .navbar__link {
     color: #fff;
@@ -1043,6 +1062,18 @@
     padding-top: 20px !important;
     padding-bottom: 20px !important;
   }
+   /* SUBMENU */
+   .submenu {
+    top: 30px;
+    left: -25px;
+    z-index: 5 !important;
+    background: linear-gradient(219deg, #0f1a50 0%, #074d92 100%);
+  }
+  .submenu-link {
+    z-index: 6 !important;
+  }
+
+  /* SUBMENU END */
 
  }
  @media (max-width: 320px) {
@@ -1054,5 +1085,16 @@
   .news__block-add {
     padding-bottom: 10px;
   }
+  /* SUBMENU */
+  .submenu {
+    top: 30px;
+    left: -25px;
+    z-index: 5 !important;
+    background: linear-gradient(219deg, #0f1a50 0%, #074d92 100%);
+  }
+  .submenu-link {
+    z-index: 6 !important;
+  }
 
+  /* SUBMENU END */
  }

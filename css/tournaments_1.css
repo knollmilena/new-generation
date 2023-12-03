@@ -88,6 +88,10 @@
     letter-spacing: -0.27px;
 }
 
+.navigator__tour {
+    margin-bottom: 20px;
+}
+
 .command__item:not(:last-of-type) {
     margin-bottom: 20px;
 }
