@@ -93,6 +93,11 @@
     font-size: 28px;
   }
   /* СБОРЫ */
+  /* Отдельная галерея */
+
+  .gallery__title {
+    font-size: calc(30px + (48 - 30) * ((100vw - 320px) / (1160 - 320)));
+  }
 }
 
 @media (max-width: 1098px) {
@@ -140,11 +145,11 @@
   }
   .gallery__block-link {
     display: flex;
-    /* flex-direction: unset; */
+    flex-direction: unset;
     max-width: 100%;
     overflow-y: auto;
     overflow-x: scroll;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
   }
   .gallery__wrap h4 {
     margin-bottom: 7px;
@@ -171,6 +176,9 @@
   .title__tournaments-application {
     font-size: calc(16px + (32 - 20) * ((100vw - 320px) / (1270 - 320))) !important;
   }
+  .title__tournaments-application {
+    font-size: calc(16px + (32 - 20) * ((100vw - 320px) / (1270 - 320))) !important;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -184,7 +192,7 @@
     margin-right: 2.93vw;
   }
   .navbar__menu {
-    margin-right: 6.05vw;
+    margin-right: 3.05vw;
   }
   .navbar__link {
     font-size: 14px;
@@ -322,6 +330,36 @@
     padding: 15px 55px !important;
   }
 
+  .internal__block {
+    max-width: 610px;
+    padding-right: 40px;
+  }
+  .tournaments__right-block {
+    padding-left: 40px;
+  }
+  .right__link:not(:last-of-type) {
+    margin-right: 10px;
+  }
+  .archive__wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .news__info {
+    padding: 20px 17px 20px 25px;
+  }
+  .title__tournaments-application {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .container__application {
+    padding: 46px 21px;
+  }
+  .tournaments__btn {
+    padding: 15px 55px !important;
+  }
+
   /* Отдельные страницы под каждый турнир */
   .content__block {
     padding: 0 42px 0 0;
@@ -332,7 +370,16 @@
   .command__block h4 {
     font-size: 30px;
   }
-  
+  /* SUB MENU */
+  .sub__link {
+    font-size: 16px;
+  }
+
+  .submenu {
+    left: 45px;
+  }
+
+  /* SUB MENU END */
 }
 
 @media (max-width: 990px) {
@@ -341,8 +388,8 @@
     padding: 2.42em 3.36em 4.06em 3.36em;
   }
   /* TOURNAMENTS */
+  /* TOURNAMENTS */
 }
-
 
 @media (max-width: 855px) {
   .tabs__item {
@@ -352,6 +399,32 @@
   }
   .tabs__link:nth-child(1) {
     margin-right: 6.17vw;
+  }
+
+  .news__block-add {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 13px;
+  }
+  .news__block-add .news__block {
+    min-width: 295px;
+  }
+  .news__block {
+    box-shadow: 0px 0px 4px 0px #333;
+  }
+  .tournaments__wrap {
+    flex-direction: column;
+  }
+  .internal__block {
+    max-width: 100%;
+    border-right: none;
+  }
+  .archive__wrap {
+    flex-direction: column;
+  }
+  .gallery__block-link {
+    display: flex;
+    flex-direction: unset;
   }
 
   .news__block-add {
@@ -504,6 +577,39 @@
     font-size: 30px;
   }
 
+  /* TOURNAMENTS */
+  .tournaments__wrap {
+    flex-direction: column;
+  }
+  .archive__wrap {
+    display: block;
+  }
+  .right__link:not(:last-of-type) {
+    margin-right: 23px;
+  }
+  .tournaments__right-block {
+    padding-left: 0;
+  }
+  .internal__block {
+    max-width: 670px;
+    padding-right: 0;
+  }
+  .news__link {
+    display: inline-block;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+  .news__descr {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .news__info {
+    padding: 30px 25px;
+  }
+  .title__tournaments-application {
+    font-size: 30px;
+  }
+
   .header__burger {
     display: block;
     position: relative;
@@ -552,7 +658,13 @@
 
   .navbar__wrap--active {
     display: block;
+    display: block;
     visibility: visible;
+    position: fixed;
+    width: 105%;
+    height: 100%;
+    padding: 13.93svw 7.2svw 0 15.11svw;
+
     position: fixed;
     width: 105%;
     height: 100%;
@@ -573,6 +685,13 @@
     margin-right: 0;
     /* background-color: #000; */
   }
+  /* SUBMENU */
+  .submenu {
+    left: 120px;
+    background: linear-gradient(219deg, #0f1a50 0%, #074d92 100%);
+  }
+
+  /* SUBMENU END */
 
   .navbar__link {
     color: #fff;
@@ -584,6 +703,7 @@
   }
   .navbar__item:not(:last-child) {
     margin-right: 0;
+    margin-bottom: 3.21vw;
     margin-bottom: 3.21vw;
   }
   .navbar__item:nth-child(6) {
@@ -633,8 +753,8 @@
     font-size: 40px;
     margin-bottom: 4.95vw;
   }
-   /* <СБОРЫ ТАБЫ */
-   .descr__tab_01 {
+  /* <СБОРЫ ТАБЫ */
+  .descr__tab_01 {
     font-size: 23px;
     margin-bottom: 15px;
     margin-right: 0;
@@ -664,7 +784,7 @@
   .block__tab_button {
     flex-direction: column;
     align-items: center;
-    padding: 40px;
+    padding: 25px;
   }
   .descr__tab_button {
     font-size: 24px;
@@ -673,9 +793,7 @@
   }
   .btn__tab {
     margin: 0;
-
-    padding: 20px 35px;
-
+    padding: 10px 23px;
   }
   .right__link {
     font-size: 20px;
@@ -684,7 +802,6 @@
     background-color: var(--orange-color);
   }
   /* СБОРЫ КОНЕЦ */
-
 }
 @media (max-width: 623px) {
   .header__btn {
@@ -701,11 +818,10 @@
     /* max-width: 290px; */
     width: 100%;
     max-width: 350px;
-    
   }
 }
 
-@media (max-width: 540px) { 
+@media (max-width: 540px) {
   /* МОБИЛКА МЕДИА */
   .container {
     max-width: 90.63svw;
@@ -803,6 +919,9 @@
     /* flex-direction: column; */
     flex-wrap: wrap;
     justify-content: center;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     width: 100%;
   }
@@ -817,8 +936,15 @@
   }
   .member__photo-first img {
     width: 100%;
+    max-width: 300px;
+    min-width: 285px;
+  }
+  .member__photo-first img {
+    width: 100%;
   }
   .member__block {
+    max-width: 300px;
+    min-width: 285px;
     max-width: 300px;
     min-width: 285px;
   }
@@ -894,11 +1020,12 @@
     /* align-items: center; */
 
     align-items: center;
+
+    align-items: center;
   }
   .news__block {
     max-width: 350px;
     /* min-width: 295px; */
-
   }
   .news__info {
     padding: 23px 19px 29px 22px;
@@ -928,21 +1055,17 @@
     margin-bottom: 13px;
   }
   .command__item:last-child {
-    margin-bottom: 12.50vw;
+    margin-bottom: 12.5vw;
   }
   .block__maps {
     margin-bottom: 50px;
   }
   .content__block {
     padding: 0;
-
   }
 
   /* TOURNAMENTS */
 
-  .tournaments__right-block {
-    display: none;
-  }
   .news__block {
     width: 100%;
   }
@@ -1017,6 +1140,16 @@
     display: flex;
     flex-direction: column;
   }
+  /* GALLERY */
+  .gallery {
+    padding-top: 30px;
+  }
+  .gallery__block-title {
+    font-size: 20px;
+  }
+  .gallery__hero h1 {
+    font-size: 38px;
+  }
 }
 
 @media (max-width: 489px) {
@@ -1027,10 +1160,26 @@
   .header__btn:not(:last-of-type) {
     margin-bottom: 15px;
   }
+  /*  ОТДЕЛЬНАЯ ГАЛЕРЕЯ */
+  .archive__container {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+  /* SUBMENU */
+  .submenu {
+    top: 30px;
+    left: -25px;
+    z-index: 5 !important;
+    background: linear-gradient(219deg, #0f1a50 0%, #074d92 100%);
+  }
+  .submenu-link {
+    z-index: 6 !important;
+  }
 
- }
- @media (max-width: 320px) {
-    /* НОВОСТИ  */
+  /* SUBMENU END */
+}
+@media (max-width: 320px) {
+  /* НОВОСТИ  */
   .news__block {
     min-width: 285px !important;
     box-shadow: none;
@@ -1038,5 +1187,16 @@
   .news__block-add {
     padding-bottom: 10px;
   }
+  /* SUBMENU */
+  .submenu {
+    top: 30px;
+    left: -25px;
+    z-index: 5 !important;
+    background: linear-gradient(219deg, #0f1a50 0%, #074d92 100%);
+  }
+  .submenu-link {
+    z-index: 6 !important;
+  }
 
- }
+  /* SUBMENU END */
+}

@@ -13,7 +13,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap"
       rel="stylesheet" />
-    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script defer src="script/script.js"></script>
@@ -24,18 +24,29 @@
         <div class="container">
           <nav class="navbar">
             <div class="nav__container">
-              <a href="index.html">LOGO site</a>
+              <a href="../index.html">LOGO site</a>
               <div class="header__burger">
                 <span></span>
               </div>
               <div class="navbar__wrap">
                 <ul class="navbar__menu list__reset">
-                  <li class="navbar__item"><a href="" class="navbar__link">О НАС</a></li>
-                  <li class="navbar__item"><a href="tournaments.html" class="navbar__link">ТУРНИРЫ</a></li>
-                  <li class="navbar__item"><a href="fees.html" class="navbar__link">СБОРЫ</a></li>
-                  <li class="navbar__item"><a href="" class="navbar__link">ГАЛЕРЕЯ</a></li>
+                  <li class="navbar__item"><a href="../index.html#about" class="navbar__link">О НАС</a></li>
+                  <li class="navbar__item">
+                    <a href="../tournaments.html" class="navbar__link submenu-link">ТУРНИРЫ </a>
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    <ul class="submenu list__reset">
+                      <li class="sub__item"><a class="navbar__link" href="">Турни Москва</a></li>
+                      <li class="sub__item"><a class="navbar__link" href="">Турнир Сочи</a></li>
+                      <li class="sub__item"><a class="navbar__link" href="">Турнир Нижний Новгород</a></li>
+                      <li class="sub__item"><a class="navbar__link" href="">Турнир Будущее уже здесь</a></li>
+                      <li class="sub__item"><a class="navbar__link" href="">Турнир Тула</a></li>
+                      <li class="sub__item"><a class="navbar__link" href="">Турнир Наций</a></li>
+                    </ul>
+                  </li>
+                  <li class="navbar__item"><a href="../fees.html" class="navbar__link">СБОРЫ</a></li>
+                  <li class="navbar__item"><a href="../gallery.html" class="navbar__link">ГАЛЕРЕЯ</a></li>
                   <li class="navbar__item"><a href="" class="navbar__link">НОВОСТИ</a></li>
-                  <li class="navbar__item"><a href="" class="navbar__link">КОНТАКТЫ</a></li>
+                  <li class="navbar__item"><a href="#footer" class="navbar__link">КОНТАКТЫ</a></li>
                 </ul>
                 <button class="personal__acc">ВОЙТИ</button>
 
@@ -121,29 +132,41 @@
           <h2 class="title__tournaments">Турнир Лето 2023 в Москве</h2>
           <div class="tournaments__wrap">
             <div class="internal__block">
-                <div class="content__block">
-                    <p>
-                        Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст..
-                    </p>
-                    <div class="command__block">
-                        <h4>Команда: дети 2015 - 2017 года\ формат 8+1</h4>
-                            <ol class="command__list">
-                                <li class="command__item">Команда1</li>
-                                <li class="command__item">Команда1</li>
-                                <li class="command__item">Команда1</li>
-                                <li class="command__item">Команда1</li>
-                                <li class="command__item">Команда1</li>
-                                <li class="command__item">Команда456456456456</li>
-                                <li class="command__item">Команда43345</li>
-                                <li class="command__item">Команда1231231</li>
-                            </ol>
-                        <div class="block__maps">
-                            <h4>Место проведения</h4>
-                            <div></div>
-                            <p>Турниры пройдет в Москве по адресу:<br> <strong>ул. Манежная площадь д. 1</strong></p>
-                        </div>    
+              <div class="content__block">
+                <p>
+                  Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum
+                  используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также
+                  реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь
+                  ваш текст..
+                </p>
+                <div class="command__block">
+                  <h4>Команда: дети 2015 - 2017 года\ формат 8+1</h4>
+                  <ol class="command__list">
+                    <li class="command__item">Команда1</li>
+                    <li class="command__item">Команда1</li>
+                    <li class="command__item">Команда1</li>
+                    <li class="command__item">Команда1</li>
+                    <li class="command__item">Команда1</li>
+                    <li class="command__item">Команда456456456456</li>
+                    <li class="command__item">Команда43345</li>
+                    <li class="command__item">Команда1231231</li>
+                  </ol>
+                  <div class="block__maps">
+                    <h4>Место проведения</h4>
+                    <div class="navigator__tour">
+                      <script
+                        type="text/javascript"
+                        charset="utf-8"
+                        async
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5b3d3f67bfb0a202742b3db0f779e8d068274e3a034cc1e72a63ab4eeed8dde1&amp;width=100%25&amp;height=250&amp;lang=ru_RU&amp;scroll=true"></script>
                     </div>
+                    <p>
+                      Турниры пройдет в Москве по адресу:<br />
+                      <strong>ул. Манежная площадь д. 1</strong>
+                    </p>
+                  </div>
                 </div>
+              </div>
             </div>
             <div class="tournaments__right-container">
               <div class="tournaments__right-block">
@@ -157,11 +180,17 @@
                 </div>
                 <div class="gallery__wrap">
                   <h4>Галерея</h4>
-                    <div class="gallery__block-link">
-                      <a href="" class="gallery__link"><img src="img/news_3.jpg" class="gallery__img" alt=""></a>
-                      <a href="" class="gallery__link"><img src="img/news_2.jpg" class="gallery__img" alt=""></a>
-                      <a href="" class="gallery__link"><img src="img/news_1.jpg" class="gallery__img" alt=""></a>
-                    </div>
+                  <div class="gallery__block-link">
+                    <a href="gallery.html" class="gallery__link"
+                      ><img src="img/news_3.jpg" class="gallery__img" alt=""
+                    /></a>
+                    <a href="gallery.html" class="gallery__link"
+                      ><img src="img/news_2.jpg" class="gallery__img" alt=""
+                    /></a>
+                    <a href="gallery.html" class="gallery__link"
+                      ><img src="img/news_1.jpg" class="gallery__img" alt=""
+                    /></a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -178,30 +207,29 @@
       </button>
     </main>
 
-    <footer>
+    <footer id="footer">
       <div class="full__footer-container">
         <div class="container">
           <div class="footer__container">
-
             <div class="footer__left-block logo__block">
               <a href="">ТУТ БУДЕТ ЛОГО</a>
             </div>
             <div class="footer__center-block contacts__block">
               <strong class="contacts__title-footer">Мы в соц.сетях:</strong>
-                <div class="social__block">
-                  <a href="" class="social__link-footer">
-                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                  </a>
-                  <a href="" class="social__link-footer">
-                    <i class="fa fa-vk" aria-hidden="true"></i>
-                  </a>
-                  <a href="" class="social__link-footer">
-                    <i class="fa fa-telegram"></i>
-                  </a>
-                  <a href="" class="social__link-footer">
-                    <i class="fa fa-instagram"></i>
-                  </a>
-                  </div>
+              <div class="social__block">
+                <a href="" class="social__link-footer">
+                  <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </a>
+                <a href="" class="social__link-footer">
+                  <i class="fa fa-vk" aria-hidden="true"></i>
+                </a>
+                <a href="" class="social__link-footer">
+                  <i class="fa fa-telegram"></i>
+                </a>
+                <a href="" class="social__link-footer">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </div>
               <strong class="contacts__title-footer">Эллектронная почта:</strong>
               <a href="mailto:" class="link__mail">Тут будет майл</a>
             </div>
@@ -209,7 +237,6 @@
               <strong>Новое поколение -</strong>
               <p>за организация детско-юношеских турниров и учебно-тренировочных сборов</p>
             </div>
-
           </div>
         </div>
       </div>
