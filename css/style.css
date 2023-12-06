@@ -260,7 +260,7 @@ ol {
   min-height: 576px;
   /* min-height: 575px; */
   background-image: linear-gradient(90deg, rgba(1, 0, 16, 0.46) 20.83%, rgba(2, 0, 26, 0) 100%),
-    url(../img/2064-sportivnye_obekty-zheltyj-igrok-stadion-ukraina-1920x1080\ 1.jpg);
+    url(/2064-sportivnye_obekty-zheltyj-igrok-stadion-ukraina-1920x1080\ 1.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

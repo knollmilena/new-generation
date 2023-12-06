@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "start": "nodemon script/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0",
+    "nanoid": "^3.3.7",
+    "nodemon": "^3.0.1",
+    "nunjucks": "^3.2.4"
+  }
+}
