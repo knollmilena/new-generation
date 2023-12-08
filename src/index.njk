@@ -22,21 +22,32 @@
         <div class="container">
           <nav class="navbar">
             <div class="nav__container">
-              <a href="index.html">LOGO site</a>
+              <a href="/">LOGO site</a>
               <div class="header__burger">
                 <span></span>
               </div>
               <div class="navbar__wrap">
                 <ul class="navbar__menu list__reset">
-                  <li class="navbar__item"><a href="" class="navbar__link">О НАС</a></li>
-                  <li class="navbar__item"><a href="tournaments.html" class="navbar__link">ТУРНИРЫ</a></li>
-                  <li class="navbar__item"><a href="fees.html" class="navbar__link">СБОРЫ</a></li>
-                  <li class="navbar__item"><a href="" class="navbar__link">ГАЛЕРЕЯ</a></li>
+                  <li class="navbar__item"><a href="#about" class="navbar__link">О НАС</a></li>
+                  <li class="navbar__item">
+                    <a href="../tournaments.html" class="navbar__link submenu-link">ТУРНИРЫ </a>
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    <ul class="submenu list__reset">
+                      <li class="sub__item"><a class="navbar__link" href="">Турни Москва</a></li>
+                      <li class="sub__item"><a class="navbar__link" href="">Турнир Сочи</a></li>
+                      <li class="sub__item"><a class="navbar__link" href="">Турнир Нижний Новгород</a></li>
+                      <li class="sub__item"><a class="navbar__link" href="">Турнир Будущее уже здесь</a></li>
+                      <li class="sub__item"><a class="navbar__link" href="">Турнир Тула</a></li>
+                      <li class="sub__item"><a class="navbar__link" href="">Турнир Наций</a></li>
+                    </ul>
+                  </li>
+                  <li class="navbar__item"><a href="../fees.html" class="navbar__link">СБОРЫ</a></li>
+                  <li class="navbar__item"><a href="../gallery.html" class="navbar__link">ГАЛЕРЕЯ</a></li>
                   <li class="navbar__item"><a href="" class="navbar__link">НОВОСТИ</a></li>
-                  <li class="navbar__item"><a href="" class="navbar__link">КОНТАКТЫ</a></li>
+                  <li class="navbar__item"><a href="#footer" class="navbar__link">КОНТАКТЫ</a></li>
                 </ul>
-                <button class="personal__acc">ВОЙТИ</button>
-                <div class="modal-wrap" style="display: none;">
+                <a href="/login" class="personal__acc">ВОЙТИ</a>
+                <div class="modal-wrap" style="display: none">
                   <!--для активации входа modal-wrap--entry-->
                   <form class="form-entry" action="#">
                     <h1 class="form-title">Вход</h1>
@@ -129,7 +140,7 @@
         </div>
       </section>
       <section class="about section__all">
-        <div class="container">
+        <div class="container" id="about">
           <div class="about__us-container">
             <div class="about__block">
               <div class="about__main-info">
@@ -218,65 +229,13 @@
                   Сбор В московской области детей от 2014 до 2016 года рождения
                 </p>
               </div>
-              <div class="calendar__right-block">
-                <div class="month">
-                  <div class="name__month">Сентябрь</div>
-                  <div class="fees__block-arow">
-                    <a href="#" class="fees__arow-left" data-slide="prev">
-                      <i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i>
-                    </a>
-                    <a href="" class="fees__arow-right" data-slide="next">
-                      <i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="test__div-block">
-                  <div class="days">
-                    <div class="block__days"><span class="weekday">ПН</span></div>
-                    <div class="block__days"><span class="weekday">ВТ</span></div>
-                    <div class="block__days"><span class="weekday">СР</span></div>
-                    <div class="block__days"><span class="weekday">ЧТ</span></div>
-                    <div class="block__days"><span class="weekday">ПТ</span></div>
-                    <div class="block__days"><span class="weekday">СБ</span></div>
-                    <div class="block__days"><span class="weekday">ВС</span></div>
-                  </div>
-                  <div class="dates">
-                    <time></time>
-                    <time></time>
-                    <time></time>
-                    <time></time>
-                    <time class="calendar__number">1</time>
-                    <time class="calendar__number">2</time>
-                    <time class="calendar__number">3</time>
-                    <time class="calendar__number">4</time>
-                    <time class="calendar__number">5</time>
-                    <time class="calendar__number">6</time>
-                    <time class="calendar__number">7</time>
-                    <time class="calendar__number">8</time>
-                    <time class="calendar__number">9</time>
-                    <time class="calendar__number">10</time>
-                    <time class="calendar__number">11</time>
-                    <time class="calendar__number">12</time>
-                    <time class="calendar__number">13</time>
-                    <time class="calendar__number">14</time>
-                    <time class="calendar__number">15</time>
-                    <time class="calendar__number">16</time>
-                    <time class="calendar__number">17</time>
-                    <time class="calendar__number">18</time>
-                    <time class="calendar__number">19</time>
-                    <time class="calendar__number">20</time>
-                    <time class="calendar__number">21</time>
-                    <time class="calendar__number">22</time>
-                    <time class="calendar__number">23</time>
-                    <time class="calendar__number">24</time>
-                    <time class="calendar__number">25</time>
-                    <time class="calendar__number">26</time>
-                    <time class="calendar__number">27</time>
-                    <time class="calendar__number">28</time>
-                    <time class="calendar__number">29</time>
-                    <time class="calendar__number">30</time>
-                    <time class="calendar__number">31</time>
-                  </div>
+              <div class="slider__container">
+                <div class="slider__block">
+                  <img class="slider__img" src="/test-photo-slider1.jpg" alt="" />
+                  <img class="slider__img" src="/test-photo-slider2.jpg" alt="" />
+                  <img class="slider__img" src="/test-photo-slider3.jpg" alt="" />
+                  <img class="slider__img" src="/test-photo-slider4.jpg" alt="" />
+                  <img class="slider__img" src="/test-photo-slider5.jpg" alt="" />
                 </div>
               </div>
             </div>
@@ -356,7 +315,7 @@
       </button>
     </main>
 
-    <footer>
+    <footer id="footer">
       <div class="full__footer-container">
         <div class="container">
           <div class="footer__container">
@@ -365,21 +324,20 @@
             </div>
             <div class="footer__center-block contacts__block">
               <strong class="contacts__title-footer">Мы в соц.сетях:</strong>
-                <div class="social__block">
-                  <a href="" class="social__link-footer">
-                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                  </a>
-                  <a href="https://vk.com/siq_tournaments" target="_blank" class="social__link-footer">
-                    <i class="fa fa-vk" aria-hidden="true"></i>
-                  </a>
-                  <a href="" class="social__link-footer">
-                    <i class="fa fa-telegram"></i>
-                  </a>
-                  <a href="" class="social__link-footer">
-                    <i class="fa fa-instagram"></i>
-
-                  </a>
-                  </div>
+              <div class="social__block">
+                <a href="" class="social__link-footer">
+                  <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </a>
+                <a href="https://vk.com/siq_tournaments" target="_blank" class="social__link-footer">
+                  <i class="fa fa-vk" aria-hidden="true"></i>
+                </a>
+                <a href="" class="social__link-footer">
+                  <i class="fa fa-telegram"></i>
+                </a>
+                <a href="" class="social__link-footer">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </div>
               <strong class="contacts__title-footer">Эллектронная почта:</strong>
               <a href="mailto:" class="link__mail">Тут будет майл</a>
             </div>
@@ -391,5 +349,6 @@
         </div>
       </div>
     </footer>
+    <script src="/slider.js"></script>
   </body>
 </html>

@@ -2,85 +2,31 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timers</title>
-    <link rel="icon" type="image/png" href="/clock.png">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css" />
-
-    <style>
-     
-    </style>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  
+    
   </head>
   <body>
-    [% if user %]
-      <section id="app" class="uk-container uk-margin-top uk-margin-bottom">
-        <p>
-          <strong>
-            User: [[ user.username ]].
-            <a href="/logout">Log out</a>
-          </strong>
-        </p>
-        <p>
-          <form v-on:submit.prevent="createTimer">
-            <input v-model="desc" class="uk-input" placeholder="Type description...">
-            <p>
-              <button v-bind:disabled="!desc" id="start-timer" class="uk-button uk-button-primary">
-                <span uk-icon="play"></span> Start timer
-              </button>
-            </p>
-          </form>
-        </p>
-        <div>
-          <h2>Active timers:</h2>
-          <ul class="uk-list">
-            <li v-for="t in activeTimers" :key="t.id">
-              <span uk-icon="close" v-on:click="stopTimer(t._id)"></span>
-              <span class="uk-text-primary mono">{{ formatDuration(t.progress) }}</span>
-              <strong class="uk-text-emphasis">{{ t.description }}</strong>
-              <span class="uk-text-muted mono">{{ formatTime(t.start) }}</span>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h2>Old timers:</h2>
-          <ul id="past-timers" class="uk-list">
-            <li v-for="t in oldTimers" :key="t.id">
-              <span class="uk-text-primary mono">{{ formatDuration(t.duration) }}</span>
-              <strong class="uk-text-emphasis">{{ t.description }}</strong>
-              (<span class="uk-text-muted mono">{{ formatTime(t.start) }}</span>
-              &ndash;
-              <span class="uk-text-muted mono">{{ formatTime(t.end) }}</span>)
-            </li>
-          </ul>
-        </div>
-      </section>
-
-
-      <script src="/index.js"></script>
-    [% else %]
-      <section class="uk-container uk-margin-top uk-margin-bottom">
-
-
-        <h2>Login</h2>
-        <form method="POST" action="/login" enctype="application/x-www-form-urlencoded">
-          <p><input type="text" name="username" class="uk-input"></p>
-          <p><input type="password" name="password" class="uk-input"></p>
-           [% if authError %]
-          <div class="uk-alert uk-alert-danger">
-            <p>Неверный логин или пароль</p>
-          </div>
-        [% endif %]
-          <p><button class="uk-button uk-button-primary">Login</button></p>
-        </form>
-
-        <h1>OR</h1>
-        <h2>Signup</h2>
-        <form method="POST" action="/signup" enctype="application/x-www-form-urlencoded">
-          <p><input type="text" name="username" class="uk-input"></p>
-          <p><input type="password" name="password" class="uk-input"></p>
-          <p><button class="uk-button uk-button-primary">Signup</button></p>
-        </form>
-      </section>
-    [% endif %]
+    <form class="form-register" method="POST" action="/signup" enctype="application/x-www-form-urlencoded">
+                    <div class="form-wrap">
+                      <label class="input-title ddddddddddd" for="fullname">ФИО:</label>
+                      <input class="input" type="text" placeholder="Иванов Иван Иванович" name="fullname" required />
+                      <label class="input-title" for="number">Номер телефона:</label>
+                      <input class="input" type="text" placeholder="89993609999" name="number" required />
+                      <label class="input-title" for="email">Почта:</label>
+                      <input class="input" type="text" placeholder="milka@mail.ru" name="email" required />
+                      <label class="input-title" for="country">Город:</label>
+                      <input class="input" type="text" placeholder="Москва" name="country" required />
+                      <label class="input-title" for="password">Пароль:</label>
+                      <input class="input" type="password" placeholder="Пароль" name="password" required />
+                      <button type="submit" class="registerbtn">Зарегистрироваться</button>
+                      <a type="submit" class="accountbtn">Уже есть аккаунт</a>
+                      
+                    </div>
+                  </form>
   </body>
 </html>

@@ -101,7 +101,13 @@ ol {
 /*  HEADER */
 
 /* SUBMENU */
+<<<<<<< HEAD
+.ddddddddddd{
+  color: #43d854;
+}
+=======
 
+>>>>>>> gh-pages
 .submenu {
   position: absolute;
   left: 75px;
@@ -1118,15 +1124,15 @@ ol {
 }
 
 /* ФОРМА ВХОДА */
-.form-entry {
+/* .form-entry {
   visibility: hidden;
   position: absolute;
   right: -50%;
   top: 0;
   width: 150px;
   color: transparent;
-}
-.form-register {
+} */
+/* .form-register {
   visibility: hidden;
   position: absolute;
   right: -50%;
@@ -1136,8 +1142,8 @@ ol {
 }
 .modal-wrap {
   display: none;
-}
-.modal-wrap--entry {
+} */
+/* .modal-wrap--entry {
   position: fixed;
   top: 0;
   left: 0;
@@ -1148,8 +1154,8 @@ ol {
   align-items: center;
   background: rgba(0, 0, 0, 0.7);
   z-index: 100;
-}
-.modal-wrap--register {
+} */
+/* .modal-wrap--register {
   position: fixed;
   top: 0;
   left: 0;
@@ -1160,13 +1166,10 @@ ol {
   align-items: center;
   background: rgba(0, 0, 0, 0.7);
   z-index: 100;
-}
+} */
 
-.modal-wrap--entry .form-entry {
-  visibility: visible;
-  position: absolute;
-  top: 70px;
-  right: calc(50% - 174px);
+/* .modal-wrap--entry .form-entry { */
+ .form-wrap{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1182,7 +1185,7 @@ ol {
   font-weight: 500;
   line-height: normal;
 }
-.modal-wrap--register .form-register {
+/* .modal-wrap--register .form-register {
   visibility: visible;
   position: absolute;
   top: 70px;
@@ -1201,7 +1204,7 @@ ol {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-}
+} */
 
 .form-title {
   margin: 0 0 14px;
@@ -1333,7 +1336,7 @@ ol {
   display: block;
 } */
 
-.modal-wrap.show .form-register,
+/* .modal-wrap.show .form-register,
 .modal-wrap.show .form-entry {
   animation: modalShow 0.4s both;
 }
@@ -1350,7 +1353,7 @@ ol {
 .modal-wrap.right .form-register,
 .modal-wrap.right .form-entry {
   animation: modalRight 0.4s both;
-}
+} */
 
 @keyframes modalShow {
   from {

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/normalize.css" />
+
+    <link rel="stylesheet" href="/tournaments.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet" />
+<<<<<<< HEAD:src/tournaments.html
+    <link rel="stylesheet" href="/css/font-awesome.min.css" />
+=======
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css" />
+>>>>>>> gh-pages:tournaments.html
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script defer src="/script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container__header">
+        <div class="container">
+          <nav class="navbar">
+            <div class="nav__container">
+              <a href="../index.html">LOGO site</a>
+              <div class="header__burger">
+                <span></span>
+              </div>
+              <div class="navbar__wrap">
+                <ul class="navbar__menu list__reset">
+                  <li class="navbar__item"><a href="../index.html#about" class="navbar__link">О НАС</a></li>
+<<<<<<< HEAD:src/tournaments.html
+                  <li class="navbar__item">
+                    <a href="/tournaments.html" class="navbar__link submenu-link">ТУРНИРЫ </a>
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+=======
+                  <li class="navbar__item"><a href="../tournaments.html" class="navbar__link submenu-link">ТУРНИРЫ
+                  </a>
+                  <i class="fa fa-caret-down" aria-hidden="true"></i>
+>>>>>>> gh-pages:tournaments.html
+                    <ul class="submenu list__reset">
+                      <li class="sub__item"><a class="navbar__link" href="">Турни Москва</a></li>
+                      <li class="sub__item"><a class="navbar__link" href="">Турнир Сочи</a></li>
+                      <li class="sub__item"><a class="navbar__link" href="">Турнир Нижний Новгород</a></li>
+                      <li class="sub__item"><a class="navbar__link" href="">Турнир Будущее уже здесь</a></li>
+                      <li class="sub__item"><a class="navbar__link" href="">Турнир Тула</a></li>
+                      <li class="sub__item"><a class="navbar__link" href="">Турнир Наций</a></li>
+                    </ul>
+                  </li>
+                  <li class="navbar__item"><a href="../fees.html" class="navbar__link">СБОРЫ</a></li>
+                  <li class="navbar__item"><a href="../gallery.html" class="navbar__link">ГАЛЕРЕЯ</a></li>
+                  <!-- <li class="navbar__item"><a href="" class="navbar__link">НОВОСТИ</a></li> -->
+                  <li class="navbar__item"><a href="#footer" class="navbar__link">КОНТАКТЫ</a></li>
+                </ul>
+<<<<<<< HEAD:src/tournaments.html
+                <a href="/login" class="personal__acc">ВОЙТИ</a>
+                <div class="modal-wrap" style="display: none">
+=======
+                <button class="personal__acc">ВОЙТИ</button>
+                <div class="modal-wrap">
+>>>>>>> gh-pages:tournaments.html
+                  <!--для активации входа modal-wrap--entry-->
+                  <form class="form-entry" action="#">
+                    <h1 class="form-title">Вход</h1>
+                    <div class="form-wrap">
+                      <label class="input-title" for="email">Почта:</label>
+                      <input class="input" type="text" placeholder="milka@mail.ru" name="email" required />
+                      <label class="input-title" for="psw">Пароль:</label>
+                      <input class="input" type="password" placeholder="Пароль" name="psw" required />
+                      <button type="submit" class="registerbtn">Войти</button>
+                      <a class="entrybtn">У меня нет аккаунта</a>
+                      <a class="form-cross">
+                        <svg
+                          class="cross"
+                          width="23"
+                          height="25"
+                          viewBox="0 0 23 25"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <rect
+                            width="30.3897"
+                            height="3.03897"
+                            transform="matrix(0.688031 0.725681 -0.688031 0.725681 2.0918 0)"
+                            fill="black" />
+                          <rect
+                            width="30.3897"
+                            height="3.03897"
+                            transform="matrix(0.688031 -0.725681 0.688031 0.725681 0 22.0547)"
+                            fill="black" />
+                        </svg>
+                      </a>
+                    </div>
+                  </form>
+                  <form class="form-register" action="#">
+                    <h1 class="form-title">Регистрация</h1>
+                    <div class="form-wrap">
+                      <label class="input-title" for="fullname">ФИО:</label>
+                      <input class="input" type="text" placeholder="Иванов Иван Иванович" name="fullname" required />
+                      <label class="input-title" for="number">Номер телефона:</label>
+                      <input class="input" type="text" placeholder="89993609999" name="number" required />
+                      <label class="input-title" for="email">Почта:</label>
+                      <input class="input" type="text" placeholder="milka@mail.ru" name="email" required />
+                      <label class="input-title" for="country">Город:</label>
+                      <input class="input" type="text" placeholder="Москва" name="country" required />
+                      <label class="input-title" for="psw">Пароль:</label>
+                      <input class="input" type="password" placeholder="Пароль" name="psw" required />
+                      <button type="submit" class="registerbtn">Зарегистрироваться</button>
+                      <a type="submit" class="accountbtn">Уже есть аккаунт</a>
+                      <a class="form-cross">
+                        <svg
+                          class="cross"
+                          height="25"
+                          viewBox="0 0 23 25"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <rect
+                            width="30.3897"
+                            height="3.03897"
+                            transform="matrix(0.688031 0.725681 -0.688031 0.725681 2.0918 0)"
+                            fill="black" />
+                          <rect
+                            width="30.3897"
+                            height="3.03897"
+                            transform="matrix(0.688031 -0.725681 0.688031 0.725681 0 22.0547)"
+                            fill="black" />
+                        </svg>
+                      </a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="tournaments">
+        <div class="container container__flex">
+          <h2 class="title__tournaments">Турниры</h2>
+          <div class="tournaments__wrap">
+            <div class="internal__block">
+              <div class="tournaments__block-flex-1">
+                <div class="news__block">
+                  <div class="photo__block news__photo-first">
+                    <img src="/news_1.jpg" alt="#" />
+                  </div>
+                  <div class="news__info">
+                    <strong class="news__name">
+                      <a href="" class="news__link">Проводим супер турнир с Геннадием Скляр</a>
+                    </strong>
+                    <p class="news__descr">
+                      В РПЛ три клуба, в заявке которых по пять экс-игроков «Спартака», имеющих опыт игры за основу
+                      нашего клуба.
+                    </p>
+                  </div>
+                </div>
+                <div class="news__block">
+                  <div class="photo__block news__photo-first">
+                    <img src="/news_1.jpg" alt="#" />
+                  </div>
+                  <div class="news__info">
+                    <strong class="news__name">
+                      <a href="" class="news__link">Проводим супер турнир с Геннадием Скляр</a>
+                    </strong>
+                    <p class="news__descr">
+                      В РПЛ три клуба, в заявке которых по пять экс-игроков «Спартака», имеющих опыт игры за основу
+                      нашего клуба.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="container__application">
+                <div class="application__block">
+                  <h3 class="title__tournaments-application">Хочешь, чтобы твоя команда участвовала в&nbsp;турнире?</h3>
+                  <button class="tournaments__btn btn__reset">Подай заявку</button>
+                </div>
+              </div>
+              <div class="tournaments__block-flex-2">
+                <div class="news__block">
+                  <div class="photo__block news__photo-first">
+                    <img src="/news_1.jpg" alt="#" />
+                  </div>
+                  <div class="news__info">
+                    <strong class="news__name">
+                      <a href="" class="news__link">Проводим супер турнир с Геннадием Скляр</a>
+                    </strong>
+                    <p class="news__descr">
+                      В РПЛ три клуба, в заявке которых по пять экс-игроков «Спартака», имеющих опыт игры за основу
+                      нашего клуба.
+                    </p>
+                  </div>
+                </div>
+                <div class="news__block">
+                  <div class="photo__block news__photo-first">
+                    <img src="/news_1.jpg" alt="#" />
+                  </div>
+                  <div class="news__info">
+                    <strong class="news__name">
+                      <a href="" class="news__link">Проводим супер турнир с Геннадием Скляр</a>
+                    </strong>
+                    <p class="news__descr">
+                      В РПЛ три клуба, в заявке которых по пять экс-игроков «Спартака», имеющих опыт игры за основу
+                      нашего клуба.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="tournaments__block-flex-3">
+                <div class="news__block">
+                  <div class="photo__block news__photo-first">
+                    <img src="/news_1.jpg" alt="#" />
+                  </div>
+                  <div class="news__info">
+                    <strong class="news__name">
+                      <a href="" class="news__link">Проводим супер турнир с Геннадием Скляр</a>
+                    </strong>
+                    <p class="news__descr">
+                      В РПЛ три клуба, в заявке которых по пять экс-игроков «Спартака», имеющих опыт игры за основу
+                      нашего клуба.
+                    </p>
+                  </div>
+                </div>
+                <div class="news__block">
+                  <div class="photo__block news__photo-first">
+                    <img src="/news_1.jpg" alt="#" />
+                  </div>
+                  <div class="news__info">
+                    <strong class="news__name">
+                      <a href="" class="news__link">Проводим супер турнир с Геннадием Скляр</a>
+                    </strong>
+                    <p class="news__descr">
+                      В РПЛ три клуба, в заявке которых по пять экс-игроков «Спартака», имеющих опыт игры за основу
+                      нашего клуба.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="container__pages">
+                <div class="click__pages">
+                  <ul class="list__pages list__reset">
+                    <a href="" class="pages__arow-left"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                    <li class="item__pages"><a href="" class="link__pages">1</a></li>
+                    <li class="item__pages"><a href="" class="link__pages">2</a></li>
+                    <li class="item__pages"><a href="" class="link__pages">3</a></li>
+                    <li class="item__pages"><a href="" class="link__pages">4</a></li>
+                    <li class="item__pages"><a href="" class="link__pages">5</a></li>
+                    <a href="" class="pages__arow-right"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tournaments__right-container">
+              <div class="tournaments__right-block">
+                <div class="archive__wrap">
+                  <h4>Архивы</h4>
+                  <div class="archive__flex">
+                    <a href="" class="right__link">Декабрь Сочи 2017</a>
+                    <a href="" class="right__link">Январь Москва 2021</a>
+                    <a href="" class="right__link">Июнь 2018</a>
+                    <a href="" class="right__link">Октябрь 2017</a>
+                    <a href="" class="right__link">Август Пятигорск 2021</a>
+                  </div>
+                </div>
+                <div class="gallery__wrap">
+                  <h4>Галерея</h4>
+                  <div class="gallery__block-link">
+<<<<<<< HEAD:src/tournaments.html
+                    <a href="gallery.html" class="gallery__link"
+                      ><img src="/news_3.jpg" class="gallery__img" alt=""
+                    /></a>
+                    <a href="gallery.html" class="gallery__link"
+                      ><img src="/news_2.jpg" class="gallery__img" alt=""
+                    /></a>
+                    <a href="gallery.html" class="gallery__link"
+                      ><img src="/news_1.jpg" class="gallery__img" alt=""
+                    /></a>
+=======
+                    <a href="" class="gallery__link"><img src="img/news_3.jpg" class="gallery__img" alt="" /></a>
+                    <a href="" class="gallery__link"><img src="img/news_2.jpg" class="gallery__img" alt="" /></a>
+                    <a href="" class="gallery__link"><img src="img/news_1.jpg" class="gallery__img" alt="" /></a>
+>>>>>>> gh-pages:tournaments.html
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <button class="btn-up btn__reset">
+        <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="15.5" cy="15.5" r="15" fill="white" stroke="#074D92" />
+          <path
+            d="M9.79938 19.1243L9 18.1791L16 10L23 18.1791L22.1099 19.1243L16 12.014L9.79938 19.1243Z"
+            fill="#074D92" />
+        </svg>
+      </button>
+    </main>
+
+    <footer id="footer">
+      <div class="full__footer-container">
+        <div class="container">
+          <div class="footer__container">
+            <div class="footer__left-block logo__block">
+              <a href="">ТУТ БУДЕТ ЛОГО</a>
+            </div>
+            <div class="footer__center-block contacts__block">
+              <strong class="contacts__title-footer">Мы в соц.сетях:</strong>
+<<<<<<< HEAD:src/tournaments.html
+              <div class="social__block">
+                <a href="" class="social__link-footer">
+                  <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </a>
+                <a href="" class="social__link-footer">
+                  <i class="fa fa-vk" aria-hidden="true"></i>
+                </a>
+                <a href="" class="social__link-footer">
+                  <i class="fa fa-telegram"></i>
+                </a>
+                <a href="" class="social__link-footer">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </div>
+=======
+              <ul class="footer__list list__reset">
+                <li class="footer_item">
+                  <a href="" target="_blank" class="social__link-footer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                      <path
+                        d="M11.1992 0.699219C5.40059 0.699219 0.699219 5.40059 0.699219 11.1992C0.699219 13.169 1.25252 15.0055 2.19629 16.5808L0.793213 21.6992L6.021 20.3269C7.5499 21.1961 9.3149 21.6992 11.1992 21.6992C16.9978 21.6992 21.6992 16.9978 21.6992 11.1992C21.6992 5.40059 16.9978 0.699219 11.1992 0.699219ZM7.60522 6.30127C7.77585 6.30127 7.95116 6.30023 8.10254 6.30811C8.28979 6.31248 8.4936 6.32619 8.68872 6.75757C8.9206 7.27032 9.42548 8.55664 9.49023 8.68701C9.55498 8.81739 9.60087 8.97098 9.51074 9.1416C9.42499 9.3166 9.38039 9.42252 9.25439 9.57739C9.12402 9.72789 8.98116 9.91481 8.86304 10.0286C8.73266 10.1589 8.59804 10.3019 8.74854 10.5618C8.89904 10.8216 9.42171 11.6736 10.1943 12.3613C11.1875 13.2486 12.0254 13.5212 12.2861 13.6516C12.5469 13.782 12.6979 13.7617 12.8484 13.5867C13.0033 13.416 13.4988 12.8306 13.6738 12.5698C13.8445 12.3091 14.0186 12.3542 14.2549 12.4399C14.4946 12.5257 15.7732 13.1555 16.0339 13.2859C16.2947 13.4163 16.4656 13.4808 16.5312 13.5867C16.5986 13.696 16.5987 14.2167 16.3826 14.824C16.1664 15.4303 15.1052 16.0167 14.6292 16.0579C14.1488 16.1025 13.7005 16.2738 11.5068 15.4102C8.86084 14.368 7.19214 11.6579 7.06177 11.4829C6.93139 11.3123 6.0022 10.0739 6.0022 8.79639C6.0022 7.51451 6.67429 6.88673 6.90967 6.62598C7.14942 6.36523 7.43022 6.30127 7.60522 6.30127Z"
+                        fill="#D4D4D4" />
+                    </svg>
+                  </a>
+                  <a href="" class="social__link-footer">
+                    <i class="fa fa-vk" aria-hidden="true"></i>
+                  </a>
+                  <a href="" class="social__link-footer">
+                    <i class="fa fa-telegram"></i>
+                  </a>
+                  <a href="" class="social__link-footer">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                  </div>
+>>>>>>> gh-pages:tournaments.html
+              <strong class="contacts__title-footer">Эллектронная почта:</strong>
+              <a href="mailto:" class="link__mail">Тут будет майл</a>
+            </div>
+            <div class="footer_right-block info__block">
+              <strong>Новое поколение -</strong>
+              <p>за организация детско-юношеских турниров и учебно-тренировочных сборов</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
