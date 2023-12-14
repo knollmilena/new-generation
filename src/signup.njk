@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timers</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  
+    
+  </head>
+  <body>
+    <div class="form-wrap">
+    
+    <form class="form-register" method="POST" action="/signup" enctype="application/x-www-form-urlencoded">
+                      <h2 class="form-title">Регистрация</h2>
+                      <label class="input-title ddddddddddd" for="fullname">ФИО:</label>
+                      <input class="input" type="text" placeholder="Иванов Иван Иванович" name="fullname" required />
+                      <label class="input-title" for="number">Номер телефона:</label>
+                      <input class="input" type="text" placeholder="89993609999" name="number" required />
+                      <label class="input-title" for="email">Почта:</label>
+                      <input class="input" type="text" placeholder="milka@mail.ru" name="email" required />
+                      <label class="input-title" for="country">Город:</label>
+                      <input class="input" type="text" placeholder="Москва" name="country" required />
+                      <label class="input-title" for="password">Пароль:</label>
+                      <input class="input" type="password" placeholder="Пароль" name="password" required />
+                      <div class="btn-wrap">
+                        <button type="submit" class="registerbtn">Зарегистрироваться</button>
+                        <a type="submit" class="accountbtn" href='/login'>Уже есть аккаунт</a>
+                       </div>
+                  </form>
+                   </div>
+  </body>
+</html>
