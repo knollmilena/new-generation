@@ -3,7 +3,6 @@
   --blue-color: #1b407f;
   --orange-color: #ff7a00;
 }
-
 .container {
   max-width: 1170px;
   padding: 0 15px;
@@ -22,7 +21,6 @@
 .hero__title {
   margin: 0;
   color: #1f1f1f;
-  font-family: Montserrat;
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -47,17 +45,15 @@
   padding-right: 75px;
 }
 .user-info-left {
-  color: rgba(31, 31, 31, 0.8);
-  font-family: Montserrat;
+  color: rgba(82, 82, 82, 0.7);
   font-size: 20px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal;
 }
 .user-info-right {
   margin-left: 21px;
   color: #525252;
-  font-family: Montserrat;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -72,7 +68,6 @@
 
 .hero-information__right {
   color: #525252;
-  font-family: Montserrat;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -95,11 +90,11 @@
 .team-profile {
   display: flex;
   align-items: center;
+  margin-bottom: 21px;
 }
 .team__name {
   margin-left: 25px;
   color: #525252;
-  font-family: Montserrat;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -108,7 +103,6 @@
 .hero__teams-title {
   margin: 0 0 25px 0;
   color: #1f1f1f;
-  font-family: Montserrat;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -155,21 +149,18 @@
 .contacts__title-footer {
   margin-bottom: 5px;
   color: #fff;
-  font-family: Open Sans;
   font-size: 18px;
   line-height: normal;
 }
 
 .link__mail {
   color: #d4d4d4;
-  font-family: Open Sans;
   font-size: 14px;
   line-height: normal;
 }
 
 .footer_right-block strong {
   color: #fff;
-  font-family: Open Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -178,11 +169,41 @@
 
 .footer_right-block p {
   color: #fff;
-  font-family: Open Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
+}
+.link_team__name::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.team-profile {
+  position: relative;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+.team__user-img rect {
+  fill: #d9d9d9;
+  cursor: pointer;
+  transition: fill 0.3s ease-in-out;
+}
+.team-profile:hover .team__user-img rect,
+.team-profile:hover .team__name {
+  color: #336fee;
+  fill: #336fee;
+}
+.team-profile:active .team__user-img rect,
+.team-profile:active .team__name {
+  color: #1b407f;
+  fill: #1b407f;
+}
+.team__user-img:active rect {
+  fill: #1b407f;
 }
 
 @media (max-width: 1024px) {

@@ -15,14 +15,14 @@
     
     <form class="form-register" method="POST" action="/signup" enctype="application/x-www-form-urlencoded">
                       <h2 class="form-title">Регистрация</h2>
-                      <label class="input-title ddddddddddd" for="fullname">ФИО:</label>
-                      <input class="input" type="text" placeholder="Иванов Иван Иванович" name="fullname" required />
+                      <label class="input-title" for="fullname" >ФИО:</label>
+                      <input class="input text-input" type="text" placeholder="Иванов Иван Иванович" name="fullname" maxlength="400" required />
                       <label class="input-title" for="number">Номер телефона:</label>
-                      <input class="input" type="text" placeholder="89993609999" name="number" required />
+                      <input class="input tel" type="phone" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\ ]\d{2}[\ ]\d{2}" minlength="18" maxlength="18" placeholder="+79993609999" name="number" required />
                       <label class="input-title" for="email">Почта:</label>
-                      <input class="input" type="text" placeholder="milka@mail.ru" name="email" required />
-                      <label class="input-title" for="country">Город:</label>
-                      <input class="input" type="text" placeholder="Москва" name="country" required />
+                      <input class="input" type="email" placeholder="milka@mail.ru" name="email" required />
+                      <label class="input-title " for="country" >Город:</label>
+                      <input class="input text-input" type="text" placeholder="Москва" name="country" maxlength="200" required />
                       <label class="input-title" for="password">Пароль:</label>
                       <input class="input" type="password" placeholder="Пароль" name="password" required />
                       <div class="btn-wrap">
@@ -31,5 +31,7 @@
                        </div>
                   </form>
                    </div>
+                   <script src="/maskPhone.js"></script>
+                   <script defer src="/maskInput.js"></script>
   </body>
 </html>

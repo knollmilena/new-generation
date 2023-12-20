@@ -463,13 +463,15 @@
     height: 69px;
   }
   .navbar__wrap {
-    visibility: hidden;
+    /* visibility: hidden; */
+    /* opacity: 0; */
     position: absolute;
-    left: -5%;
+    left: -70%;
     top: 0;
     width: 150px;
     color: transparent;
-    transition: all 0.3s ease-in-out, color 0.1s ease-in-out;
+    background: linear-gradient(219deg, #0f1a50 0%, #074d92 100%);
+    transition: all 0.3s ease-in-out, color 0s ease-in-out;
   }
   .navbar {
     width: 100%;
@@ -658,25 +660,35 @@
 
   .navbar__wrap--active {
     display: block;
-    display: block;
-    visibility: visible;
+    /* visibility: visible; */
+    /* color: transparent; */
+    color: #fff;
     position: fixed;
     width: 105%;
     height: 100%;
     padding: 13.93svw 7.2svw 0 15.11svw;
-
-    position: fixed;
-    width: 105%;
-    height: 100%;
-    padding: 13.93svw 7.2svw 0 15.11svw;
-
     top: 0;
     right: 0;
+    left: 0;
+    bottom: 0;
     z-index: 2;
     background: linear-gradient(219deg, #0f1a50 0%, #074d92 100%);
     box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out, color 0s ease-in-out;
   }
+  /* .navbar__wrap .navbar__link {
+    color: transparent;
+  }
+  .navbar__wrap--active .navbar__link {
+    color: #fff;
+  }
+  .navbar__wrap .personal__acc {
+    color: transparent;
+  }
+  .navbar__wrap--active .personal__acc {
+    color: #fff;
+  } */
+
   .navbar__menu {
     display: flex;
     flex-direction: column;
@@ -694,7 +706,6 @@
   /* SUBMENU END */
 
   .navbar__link {
-    color: #fff;
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
@@ -711,7 +722,6 @@
   }
   .personal__acc {
     text-align: inherit;
-    color: #fff;
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;

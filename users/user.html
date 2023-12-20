@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Вход</title>
-    <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsive.css" />
-     <link rel="stylesheet" href="/personal-area.css" />
-    <link rel="stylesheet" href="/personal-area__media.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/personal-area.css" />
+    <link rel="stylesheet" href="../css/personal-area__media.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script defer src="script/script.js"></script>
+    <title>Personal Area</title>
   </head>
   <body>
-    [% if user %]
     <header class="header">
       <div class="container__header">
         <div class="container">
@@ -41,7 +46,7 @@
                   <li class="navbar__item"><a href="" class="navbar__link">НОВОСТИ</a></li>
                   <li class="navbar__item"><a href="#footer" class="navbar__link">КОНТАКТЫ</a></li>
                 </ul>
-                <a href="/login/logout" class="personal__acc">ВЫЙТИ</a>
+                <a href="" class="personal__acc">ВЫЙТИ</a>
               </div>
             </div>
           </nav>
@@ -54,21 +59,21 @@
           <h1 class="hero__title">Мой аккаунт</h1>
           <div class="hero__wrap">
             <div class="hero__basic-data">
-              <img class="hero__user-img" src="/without-photo.png" alt="Серый фон" />
+              <img class="hero__user-img" src="../img/without-photo.png" alt="Серый фон" />
               <div class="hero-information__wrap">
                 <p id="user_id" class="user-info-left">
-                  ID пользователя:<span class="user-info-right">[[ user._id ]]</span>
+                  ID пользователя:<span class="user-info-right">ghdhghdf1132jhhv3jhv</span>
                 </p>
                 <p id="user_fullname" class="user-info-left">
-                  ФИО:<span class="user-info-right" type="text" >[[ user.fullname ]]</span>
+                  ФИО:<span class="user-info-right">Герасимов Михаил Валерьевич</span>
                 </p>
                 <p id="user_phone-number" class="user-info-left">
-                  Номер телефона:<span class="user-info-right">[[ user.number ]]</span>
+                  Номер телефона:<span class="user-info-right">89265432325</span>
                 </p>
-                <p id="user_mail" class="user-info-left">Почта:<span class="user-info-right">[[ user.email ]]</span></p>
-                <p id="user_city" class="user-info-left">Город:<span class="user-info-right">[[ user.country ]]</span></p>
+                <p id="user_mail" class="user-info-left">Почта:<span class="user-info-right">gera1991@mail.ru</span></p>
+                <p id="user_city" class="user-info-left">Город:<span class="user-info-right">Москва</span></p>
                 <p id="user_registration-date" class="user-info-left">
-                  Дата регистрации:<span class="user-info-right">[[ user.date ]]</span>
+                  Дата регистрации:<span class="user-info-right">12.04.23</span>
                 </p>
               </div>
             </div>
@@ -76,19 +81,12 @@
               <h2 class="hero__teams-title">Профили команд</h2>
               <div class="team-profile__wrap">
                 <div class="team-profile">
-                  <img class="team__user-img" src="/without-photo.png" alt="Серый фон" />
+                  <img class="team__user-img" src="../img/without-photo.png" alt="Серый фон" />
                   <h3 class="team__name"><a href="personal-area-team.html">Ястреб</a></h3>
                 </div>
                 <div class="team-profile">
-                  <img class="team__user-img" src="/without-photo.png" alt="Серый фон" />
+                  <img class="team__user-img" src="../img/without-photo.png" alt="Серый фон" />
                   <h3 class="team__name">Метеор</h3>
-                </div>
-                <div class="team-profile">
-                  <svg class="team__user-img" width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="19.7656" width="15.2969" height="55" rx="3"/>
-<rect y="35.2344" width="15.2969" height="55" rx="3" transform="rotate(-90 0 35.2344)"/>
-</svg>
-                  <h3 class="team__name"><a class="link_team__name" href="personal-area-team.html">Добавить команду</a></h3>
                 </div>
               </div>
             </div>
@@ -130,30 +128,5 @@
         </div>
       </div>
     </footer>
-
-      <script src="/main.js"></script>
-    [% else %]
-      <section class="uk-container uk-margin-top uk-margin-bottom">
-        <div class="form-wrap">
-          <form class="form-entry" method="POST" action="/login" enctype="application/x-www-form-urlencoded">
-                    <h2 class="form-title">Вход</h2> 
-                      <label class="input-title" for="email">Почта:</label>
-                      <input id="mail" class="input" type="email" placeholder="milka@mail.ru" name="email" required />
-                      <label class="input-title" for="password">Пароль:</label>
-                      <input class="input" type="password" placeholder="Пароль" name="password" required />
-                      [% if authError %]
-                        <div class="uk-alert uk-alert-danger">
-                            <p>Неверный логин или пароль</p>
-                        </div>
-                      [% endif %]
-                       <div class="btn-wrap">
-                      <button type="submit" class="registerbtn">Войти</button>
-                      <a class="entrybtn" href="/signup">У меня нет аккаунта</a>
-                      </div>
-         </form>
-        </div>
-      </section>
-      
-    [% endif %]
   </body>
 </html>

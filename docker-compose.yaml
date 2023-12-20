@@ -8,7 +8,9 @@ services:
     container_name: mongoDB1
     restart: always
     ports:
-      - '0.0.0.0:27022:27017'
+      - '27022:27017'
+    networks:
+     mongo
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: MOzprbXZtPVK
